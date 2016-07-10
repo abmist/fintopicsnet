@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    	{% for contact in contact_list %}
+            <h4>{{ contact.first_name }} {{ contact.last_name }}</h4>
+            <p>{{ contact.mobile }}</p>
+            <p>{{ contact.address }}</p>
+    	{% endfor %}
+
+    <p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+    </p>
+
+{% endblock %}

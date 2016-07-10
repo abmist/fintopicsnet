@@ -11,8 +11,7 @@ from polls.models import PollSubject
 
 
 def forum(request):
-    return render(request, 'forum/forum.html',
-                  {'subjects': Subject.objects.all()})
+    return render(request, 'forum/forum.html', {'subjects': Subject.objects.all()})
 
 
 def threads(request, subject_id):

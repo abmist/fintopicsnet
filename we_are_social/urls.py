@@ -24,10 +24,11 @@ from accounts.views import register, profile, login, logout, cancel_subscription
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
+from contacts import views as contacts_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.get_index),
+    url(r'^$', views.get_index, name='home'),
 
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
@@ -50,10 +51,10 @@ urlpatterns = [
     # Blog URLs
     url(r'^blog/', include('reusable_blog.urls')),
 
-    
+
 
     # Forum URLs
-    url(r'^forum/$', forum_views.forum),
+    url(r'^forum/$', forum_views.forum, name='forum'),
     url(r'^threads/(?P<subject_id>\d+)/$', forum_views.threads, name='threads'),
     url(r'^new_thread/(?P<subject_id>\d+)/$', forum_views.new_thread, name='new_thread'),
     url(r'^thread/(?P<thread_id>\d+)/$', forum_views.thread, name='thread'),
@@ -71,5 +72,9 @@ urlpatterns = [
     url(r'^post/update/(?P<pk>[\d+]+)/$', thread_api_views.PostUpdateView.as_view(),
         name="update-poll"),
     url(r'post/delete/(?P<pk>[\d]+)/$', thread_api_views.PostDeleteView.as_view(),
-        name='delete-poll')
+        name='delete-poll'),
+
+    # Contacts URLs
+    url(r'^contacts/$', contacts_views.get_contacts, name='contacts'),
+    #url(r'^contacts_detail/(?P<contact_id>[\d]+)/$', contacts_views.get_contacts_detail, name='contacts_detail'),
 ]

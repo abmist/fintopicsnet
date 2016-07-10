@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+        <div class="col-md-12">
+
+            {% for contact in details %}
+                {{ contact.first_name }}
+                {{ contact.last_name }}
+                {{ contact.mobile }}
+                {{ contact.city }}
+            {% endfor %}
+        </div>
+
+{% endblock %}

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'magazines',
     'threads',
     'polls',
+    'contacts',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -166,4 +167,7 @@ SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
 
+
+
+DISQUS_WEBSITE_SHORTNAME = 'blog_app'
 
