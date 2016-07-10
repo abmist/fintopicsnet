@@ -103,7 +103,7 @@ def new_post(request, thread_id):
     args = {
         'form': form,
         'form_action': reverse('new_post', args={thread.id}),
-        'button_text': 'Update Post'
+        'button_text': 'Send new post'
     }
 
     args.update(csrf(request))
