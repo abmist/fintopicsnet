@@ -5,11 +5,18 @@
         <div class="col-md-12">
 
             {% for contact in details %}
-                {{ contact.first_name }}
-                {{ contact.last_name }}
-                {{ contact.mobile }}
-                {{ contact.city }}
+                <p>First name: <b>{{ contact.first_name }}</b></p>
+                <p>Last name: <b>{{ contact.last_name }}</b></p>
+                <p>Email: <b>{{ contact.email }}</b></p>
+                <p>Address: <b>{{ contact.address }}</b></p>
+                <p>City: <b>{{ contact.city }}</b></p>
+
+
             {% endfor %}
         </div>
+
+
+        <a href="{% url 'contacts' %}" class="btn btn-primary">Contact list</a>
+
 
 {% endblock %}

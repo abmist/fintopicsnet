@@ -76,5 +76,5 @@ urlpatterns = [
 
     # Contacts URLs
     url(r'^contacts/$', contacts_views.get_contacts, name='contacts'),
-    #url(r'^contacts_detail/(?P<contact_id>[\d]+)/$', contacts_views.get_contacts_detail, name='contacts_detail'),
+    url(r'^contacts_detail/(?P<contact_id>\d+)/$', contacts_views.get_details, name='contacts_detail'),
 ]

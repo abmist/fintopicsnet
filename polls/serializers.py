@@ -19,7 +19,9 @@ class PollSubjectSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'votes', 'percentage_of_votes')
 
     def get_percentage_of_votes(self, subject):
-        return subject.votes.count() / subject.poll.votes.count() * 100
+        a = subject.poll.votes.count()
+
+        return subject.votes.count() / a * 100
 
 
 class PollSerializer(serializers.ModelSerializer):

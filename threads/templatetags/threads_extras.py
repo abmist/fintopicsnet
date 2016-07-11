@@ -52,3 +52,5 @@ def vote_percentage(subject):
         return 0
     total_votes = subject.poll.votes.count()
     return (100 / total_votes) * count
+
+
