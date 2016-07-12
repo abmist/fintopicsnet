@@ -25,6 +25,7 @@ from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
 from contacts import views as contacts_views
+from about import views as about_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -65,16 +66,15 @@ urlpatterns = [
 
     # REST URLs
     url(r'^threads/polls/$', api_views.PollViewSet.as_view()),
-    url(r'^threads/polls/(?P<pk>[\d]+)$', api_views.PollInstanceView.as_view(),
-        name='poll-instance'),
-    url(r'^threads/polls/vote/(?P<thread_id>\d+)/$', api_views.VoteCreateView.as_view(),
-        name='create_vote'),
-    url(r'^post/update/(?P<pk>[\d+]+)/$', thread_api_views.PostUpdateView.as_view(),
-        name="update-poll"),
-    url(r'post/delete/(?P<pk>[\d]+)/$', thread_api_views.PostDeleteView.as_view(),
-        name='delete-poll'),
+    url(r'^threads/polls/(?P<pk>\d+)$', api_views.PollInstanceView.as_view(), name='poll-instance'),
+    url(r'^threads/polls/vote/(?P<thread_id>\d+)/$', api_views.VoteCreateView.as_view(), name='create_vote'),
+    url(r'^post/update/(?P<pk>\d+)/$', thread_api_views.PostUpdateView.as_view(), name="update-poll"),
+    url(r'^post/delete/(?P<pk>\d+)/$', thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
 
     # Contacts URLs
     url(r'^contacts/$', contacts_views.get_contacts, name='contacts'),
     url(r'^contacts_detail/(?P<contact_id>\d+)/$', contacts_views.get_details, name='contacts_detail'),
+
+    # Contacts URLs
+    url(r'^about/$', about_views.about_info, name='about'),
 ]
