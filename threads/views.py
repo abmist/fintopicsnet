@@ -151,7 +151,7 @@ def delete_post(request, post_id):
 
 @login_required
 def thread_vote(request, thread_id, subject_id):
-    thread = Thread.objects.get(id=thread_id)
+    thread = Thread.objects.get(Thread, pk=thread_id)    #I've added Thread, and changed id > pk
     subject = thread.poll.votes.filter(user=request.user)
 
     if subject:
@@ -159,7 +159,7 @@ def thread_vote(request, thread_id, subject_id):
                                 "You're not trying to cheat are you?")
         return redirect(reverse('thread', args={thread_id}))
 
-    subject = PollSubject.objects.get(id=subject_id)
+    subject = PollSubject.objects.get(Subject, pk=subject_id)   #I've added Subject, and changed id > pk
     subject.votes.create(poll=subject.poll, user=request.user)
 
     messages.success(request, "We've registered your vote!")

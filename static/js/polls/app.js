@@ -56,3 +56,6 @@ pollApp.controller('PollCtrl', function($scope, pollFactory) {
         pollFactory.vote(poll, subject).then(getPoll).then(setPoll, showError);
     }
 });
+
+
+

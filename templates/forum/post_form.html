@@ -12,7 +12,8 @@
     </script>
 {% endblock %}
 {% block content %}
-    <section>
+    <div class="basic-box">
+    <section class="container">
         <div class="col-md-9">
             <form method="post" action="{{ form_action }}">
                 {% csrf_token %}
@@ -23,4 +24,5 @@
             </form>
         </div>
     </section>
+    </div>
 {% endblock %}

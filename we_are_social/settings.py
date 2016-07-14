@@ -26,7 +26,7 @@ SECRET_KEY = '_34saw!bco()q8$4(_5iyik-+nmr+u7jrsfywjq)guc9+j%==c'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-SITE_ID = 2
+SITE_ID = 3
 
 # Application definition
 
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'threads',
     'polls',
     'contacts',
+
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -71,7 +72,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
+    'django.middleware.security.SecurityMiddleware', #Redunding?
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
@@ -171,3 +172,5 @@ PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
 
 DISQUS_WEBSITE_SHORTNAME = 'blog_app'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/static/media/'

@@ -1,8 +1,9 @@
 {% load staticfiles %}
 {% load emoticons_tags %}
+<div class="basic-box">
 <section class="row comment col-md-9">
     <div class="col-md-3 comment-profile">
-        <p><img src="{% static 'images/user.png' %}"></p>
+        <p><img src="{% static 'media/images/user.png' %}"></p> <!--Maybe it's better create a specific folder for profile pics. -->
         <p>{{ post.user.username }}</p>
         <p>{{ post.user.posts.count }} POSTS</p>
     </div>
@@ -15,3 +16,4 @@
         {% include "forum/comment_details.html" %}
     </div>
 </section>
+</div>

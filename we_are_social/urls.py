@@ -46,11 +46,11 @@ urlpatterns = [
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
     url(r'^paypal-return/$', paypal_views.paypal_return),
     url(r'^paypal-cancel/$', paypal_views.paypal_cancel),
-    url(r'^products/$', product_views.all_products),
+    url(r'^products/$', product_views.all_products, name='products'),
     url(r'^magazines/$', magazine_views.all_magazines),
 
     # Blog URLs
-    url(r'^blog/', include('reusable_blog.urls')),
+    url(r'^blog/', include('reusable_blog.urls'), name='blog'),
 
 
 
@@ -76,5 +76,5 @@ urlpatterns = [
     url(r'^contacts_detail/(?P<contact_id>\d+)/$', contacts_views.get_details, name='contacts_detail'),
 
     # Contacts URLs
-    url(r'^about/$', about_views.about_info, name='about'),
+    url(r'^about/$', about_views.about_map, name='about'),
 ]

@@ -1,0 +1,175 @@
+body {
+padding-top: 60px;
+    font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+}
+
+
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.basic-box {
+    padding: 5% 2%;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+nav.navbar {
+    background-color: #fff;
+}
+
+nav .navbar-brand {
+    font-size: 22px;
+    letter-spacing: -1.5px;
+}
+
+nav	a {
+    font-size: 14px;
+    padding-top: 22px !important;
+    padding-bottom: 24px !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #0095da;
+
+}
+
+
+
+
+nav.navbar.mini {
+	min-height: 35px;
+    background-color: #f0f0f0;
+
+}
+
+nav.navbar.mini .navbar-brand {
+    font-size: 18px;
+}
+
+nav.navbar.mini  a {
+    padding-top: 20px !important;
+    padding-bottom: 18px !important;
+  }
+
+.active-pg {
+    font-weight: bold;
+}
+
+h1 {
+		font-size: 500%;
+		letter-spacing: -7px;
+		font-weight: 600;
+	}
+
+	h2 {
+		letter-spacing:-3px;
+		font-size: 300%;
+		line-height: 100%;
+	}
+
+	h3 {
+		letter-spacing:-0.7px;
+		font-size: 160%;
+		line-height: 110%;
+	}
+
+	h4 {
+		letter-spacing:-0.7px;
+		font-size: 140%;
+		line-height: 110%;
+	}
+
+	h5 {
+		letter-spacing:-0.2px;
+		font-size: 120%;
+		line-height: 130%;
+		font-weight: 400;
+		color: #3c3c3c;
+
+	}
+
+	.firstColour {
+		color:#49497a;
+	}
+
+	.secondColour {
+		color: #5f5f9f;
+	}
+
+
+    #wrapper {
+	    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+	    margin: 0 auto;
+	    max-width: 1440px;
+	    width: 100% !important;
+	}
+
+	.parallax-standard-block {
+	 	background-attachment: fixed;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 770px;
+	    margin: 0 auto;
+	    max-width: 1440px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: relative;
+	    width: 100% !important;
+	}
+
+    .intro-steps-1 {
+		background-image: url("images/im-1.jpg");
+	}
+
+	.intro-steps-2 {
+		background-image: url("images/im-2.jpg");
+	}
+
+	.intro-steps-3 {
+		background-image: url("images/im-3.jpg");
+	}
+
+	.intro-steps-4 {
+		background-image: url("images/im-4.jpg");
+	}
+
+    .form-frame {
+
+        padding-top: 10%;
+        padding-bottom: 8%;
+    }
+
+
+    legend {
+        color:#5f5f9f;
+        letter-spacing:-0.7px;
+    }
+
+    a,
+	a:hover,
+	a:focus,
+	a:active,
+	a:visited {
+		text-decoration:none;
+	}
+
+	ul{
+		list-style-type:none;
+	}
+
+    .terms {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+	footer {
+		font-size: 14px;
+	}
+
