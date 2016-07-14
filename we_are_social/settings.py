@@ -172,5 +172,5 @@ PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
 
 DISQUS_WEBSITE_SHORTNAME = 'blog_app'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/static/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_URL = '/static/media/'
