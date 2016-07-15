@@ -3,27 +3,56 @@
 {% block content %}
 {% load bootstrap_tags %}
     <div class="basic-box">
+    <div class="row">
+        <div id ="subjects-intro" class="col-sm-3">
+
+
+
+            <h2 class="firstColour">What do you want to talk about?</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+
+
+            <section> <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> SUBJETCS &nbsp;<b>{{ subjects.count }}</b>&nbsp;&nbsp;
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    {% for subject in subjects %}
+                        <li> <a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></li>
+                    {% endfor %}
+                </ul>
+              </div></section>
+
+        </div>
+        <div class="col-sm-9"> <div class="row">
         {% for subject in subjects %}
-            <section class="subject">
-                <h2><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h2>
-                <p>
+            <div class="col-sm-4" >
 
-                        {% autoescape off %}
-                            {{ subject.description }}
-                        {% endautoescape %}
+                <div  class="forum-subject" >
 
-                </p>
-            <table>
-                <tr>
-                    <th>THREADS</th>
-                    <th>POSTS</th>
-                </tr>
-                <tr>
-                    <td>{{ subject.threads.count }}</td>
-                    <td>{{ subject|get_total_subject_posts }}</td>
-                </tr>
-            </table>
-            </section>
+                    <h2><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h2>
+                    <table>
+                        <tr>
+                            <th class="gap-between-table-elements">THREADS</th>
+                            <th class="gap-between-table-elements">POSTS</th>
+                        </tr>
+                        <tr>
+                            <td class="gap-between-table-elements">{{ subject.threads.count }}</td>
+                            <td class="gap-between-table-elements">{{ subject|get_total_subject_posts }}</td>
+                        </tr>
+                    </table>
+
+                    <a href="{% url 'threads' subject.id %}"  class="btn btn-default btn-md">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp; Enter
+                    </a>
+                </div>
+            </div>
         {% endfor %}
+    </div></div>
+    </div>
+
+
     </div>
 {% endblock %}

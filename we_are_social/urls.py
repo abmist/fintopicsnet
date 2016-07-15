@@ -24,8 +24,9 @@ from accounts.views import register, profile, login, logout, cancel_subscription
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
-from contacts import views as contacts_views
 from about import views as about_views
+from contact import views as contact_views
+from contacts import views as contacts_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -75,6 +76,9 @@ urlpatterns = [
     url(r'^contacts/$', contacts_views.get_contacts, name='contacts'),
     url(r'^contacts_detail/(?P<contact_id>\d+)/$', contacts_views.get_details, name='contacts_detail'),
 
-    # Contacts URLs
+    # About URLs
     url(r'^about/$', about_views.about_map, name='about'),
+
+    # Contact URLs
+    url(r'^contact/$', contact_views.contact, name='contact'),
 ]

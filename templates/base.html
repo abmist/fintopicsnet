@@ -48,6 +48,7 @@
       <li><a href="/contacts/"{% if request.path == "/contacts/" %}class="active-pg"{% endif %}>Contacts</a></li>
       <li><a href="/blog/"{% if request.path == "/blog/" %}class="active-pg"{% endif %}>Blog</a></li>
       <li><a href="/about/"{% if request.path == "/about/" %}class="active-pg"{% endif %}>About</a></li>
+      <li><a href="/contact/"{% if request.path == "/contact/" %}class="active-pg"{% endif %}>Contact</a></li>
 
 
             {% if user.is_authenticated %}
@@ -101,7 +102,7 @@
 <script src="http://maps.googleapis.com/maps/api/js"></script><!-- Google Maps -->
 <script src="{% static 'js/polls/app.js' %}"></script>
 <script src="{% static 'js/map_script.js' %}"></script>  <!-- Maps function -->
-<script src="{% static 'js/nabvar_behaviour.js' %}"></script>  <!-- Maps function -->
+<script src="{% static 'js/navbar_behaviour.js' %}"></script>  <!-- Maps function -->
 
 
 
@@ -129,6 +130,7 @@
         </div>
 
         <div class="col-sm-5">
+            <a href="{% url 'contact' %}">Contact</a><br>
             <p>Made By Bootcampers and Django </p>
         </div>
         <div class="col-sm-3" style="text-align: right">
