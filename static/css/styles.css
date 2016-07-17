@@ -13,7 +13,11 @@
 	}
 
 	.basic-box {
-		padding: 5% 2%;
+		padding: 5% 4%;
+	}
+
+	.maps-box {
+		padding: 3% 4%;
 	}
 
 	.navbar {
@@ -94,6 +98,11 @@
 			font-weight: 400;
 			color: #3c3c3c;
 
+		}
+
+		h6 {
+			font-size: 90%;
+			color: slategray;
 		}
 
 		.firstColour {
@@ -197,30 +206,22 @@
 
 
 
-	.forum-subject {
-		padding: 2% 1% 12% 1%; margin: 2%;
+	.internal-frame {
+		 margin-bottom: 2%;
+		padding-bottom: 12%;
 		border-bottom: thin solid lightgray;
 
+
 	}
 
 
-
-	.forum-subject > a.btn.btn-default.btn-md:hover,
-	.forum-subject > a.btn.btn-default.btn-md:focus {
-		background-color: #42586e;
-		color: #fff;
-		border-color: #42586e;
-	}
-
-	.forum-subject > table {
+	.internal-frame > table {
 		margin-top: 8%;
 	}
 
-	.forum-subject > a {
+	.internal-frame > a {
 		margin-top: 8%;
 	}
-
-
 
 	th {
 		color:#49497a;
@@ -230,55 +231,136 @@
 		padding-right: 12%;
 	}
 
-	#subjects-intro {
-		padding: 1% 5% 1% 3%;
+	#internal-frame-left-intro {
+		padding-top: 1%;
+		padding-right: 5%;
+		padding-bottom: 1%;
 	}
 
-	#subjects-intro p {
+	#internal-frame-left-intro p {
 		margin-top: 10%;
 	}
 
-	#subjects-intro table {
+	#internal-frame-left-intro table {
 		margin-top: 10%;
 	}
 
-	#subjects-intro section {
+	#internal-frame-left-intro section {
 		margin-top: 12%;
 	}
 
-	#subjects-intro section ul {
+	#internal-frame-left-intro section ul {
 		line-height: 20%;
 	}
 
-	#subjects-intro section div button:hover,
-	#subjects-intro section div button:focus {
+	.standard-style-button:hover,
+	.standard-style-button:focus {
 		background-color: #42586e;
 		color: #fff;
 		border-color: #42586e;
 	}
 
+	.thread-list-item {
+		border-left: 2px solid #42586e;
+		margin: 0% 4% 4% 4%;
+		background-color: #fbfbfb;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	.thread-list-item:hover,
+	.thread-list-item:focus {
+
+		background-color: #e6ebf0;
+	}
 
 
 
+	.thread-list {
+		margin-top: 6%;
+	}
+	.buttons-form {
+		margin-top: 4%;
+	}
+
+	#if-not-sure-sending {
+		text-align: right;
+	}
+
+	.dotted-background {
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+	}
+
+	.shades {
+		margin-bottom: 2%;
+		padding: 4%;
+		background-color: #fbfbfb;
+		border-left: 2px solid #42586e;
+	}
 
 
+	.comment-content {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
 
+	#slide-1 {
+			background-image: url("images/about_3.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			height: 500px;
+			width: 100%;
+		margin: 4% 0%;
+
+		}
+
+		#slide-2 {
+			background-image: url("images/about_2.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			height: 500px;
+			width: 100%;
+			margin: 4% 0%;
+		}
+
+		#slide-3 {
+			background-image: url("images/about_9.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			height: 500px;
+			width: 100%;
+			margin: 4% 0%;
+		}
 }
 
 
 @media only screen and (min-width: 400px) {
 
-	.forum-subject {
-		padding: 4% 1% 12% 1%; margin: 2%;
+	.internal-frame {
+		margin: 10%;
+		padding-bottom: 12%;
 		border-bottom: thin solid #fff;
-
 	}
 
-	.forum-subject > table {
+
+	.thread-list-item {
+		margin: 0% 0% 1% 0%;
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+
+
+	.internal-frame > table {
 		margin-top: 10%;
 	}
 
-	.forum-subject > a {
+	.internal-frame > a {
 		margin-top: 10%;
 	}
 

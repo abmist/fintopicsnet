@@ -12,17 +12,32 @@
     </script>
 {% endblock %}
 {% block content %}
-    <div class="basic-box">
-    <section class="container">
-        <div class="col-md-9">
-            <form method="post" action="{{ form_action }}">
-                {% csrf_token %}
-                {{ form|as_bootstrap }}
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">{{ button_text }}</button>
+    <div class="basic-box dotted-background">
+        <section class="row ">
+
+                <form method="post" action="{{ form_action }}">
+                    {% csrf_token %}
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    {{ form | as_bootstrap }}
+
+                    <div class=" row buttons-form">
+
+                        <div class="col-sm-6 form-group">
+                            <button type="submit" class="btn btn-default standard-style-button"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Send</button>
+                        </div>
+
+                    </div>
                 </div>
-            </form>
-        </div>
-    </section>
+                    <div class="col-sm-2"></div>
+
+
+                </form>
+
+        </section>
     </div>
+
+
+
+
 {% endblock %}

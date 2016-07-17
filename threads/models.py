@@ -19,6 +19,7 @@ class Thread(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='threads')
     subject = models.ForeignKey(Subject, related_name='threads')
     created_at = models.DateTimeField(default=timezone.now)
+    tag = models.CharField(max_length=40, blank=True, null=True)
 
     def __unicode__(self):
         return self.name

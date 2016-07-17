@@ -9,7 +9,7 @@ class ThreadForm(forms.ModelForm):
 
     class Meta:
         model = Thread
-        fields = ['name']
+        fields = ['name', 'tag']
 
 
 class PostForm(forms.ModelForm):

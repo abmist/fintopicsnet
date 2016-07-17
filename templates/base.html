@@ -113,7 +113,7 @@
             <a href="{% url 'home' %}">Home</a><br>
             <a href="{% url 'products' %}">Training</a><br>
             <a href="{% url 'forum' %}">Forum</a><br>
-            <a href="/blog/">Blog</a>
+
         </div>
 
         <div class="col-sm-2">
@@ -125,15 +125,19 @@
                 <a href="{% url 'register' %}">Sign Up</a><br>
                 <a href="{% url 'login' %}">Log In</a><br>
             {% endif %}
-            <a href="/pages/terms/">Terms and Conditions</a>
+
 
         </div>
 
-        <div class="col-sm-5">
+        <div class="col-sm-2">
+            <a href="/blog/">Blog</a>
             <a href="{% url 'contact' %}">Contact</a><br>
-            <p>Made By Bootcampers and Django </p>
+            <a href="/pages/terms/">Terms and Conditions</a>
         </div>
-        <div class="col-sm-3" style="text-align: right">
+     <div class="col-sm-4">
+         <p>Made By Bootcampers and Django </p>
+         </div>
+        <div class="col-sm-2" style="text-align: right">
             <a href=""><img src="{% static "images/sc_facebook.png" %}" height="24px" width="24px" alt="Facebook link"></a>
             <a href=""><img src="{% static "images/sc_linkedin.png" %}" height="24px" width="24px" alt="LinkedIn link"></a>
             <a href=""><img src="{% static "images/sc_pinterest.png" %}" height="24px" width="24px" alt="Pinterest link"></a>

@@ -2,12 +2,105 @@
 {% load staticfiles %}
 {% block content %}
 
+<div class="basic-box">
+    <div class="row">
+        <div class="col-sm-3">
+            <h2>What can we tell you about us?</h2>
 
-    <div id="map" class="" style="height: 300px; width: 100%; "></div>
-    <div id="map2" class="" style="height: 300px; width: 100%; "></div>
-    <div class="basic-box">
-        <h3>Contact us</h3>
-        <p>Office <b>London</b></p>
+        </div>
+        <div class="col-sm-9">
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-12" style=" text-align: center"><h4> Our timeline </h4></div>
+        <div class="col-sm-4">
+            <h3 class="firstColour">Past</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="firstColour">Present</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3 class="firstColour">Future</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+</div>
+
+
+
+  <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
+
+  	<ol class="carousel-indicators">
+	    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+    </ol>
+	<div class="carousel-inner" role="listbox">
+		<div id="slide-1" class="item active"></div>
+		<div id="slide-2" class="item"></div>
+        <div id="slide-3" class="item"></div>
+	</div>
+</div>
+
+    <div class="maps-box row">
+        <div class="col-sm-3">
+
+            <h3 class="firstColour">UK office</h3>
+
+            <p><b>Visit us</b><br>
+            221 Baker Street<br>
+            NW1 6XE London<br>
+            UK</p>
+            <p><b>Call us</b><br>
+            Mon-Fri<br>
+            08.00-18.00<br>
+            +44 5765436346</p>
+
+        </div>
+        <div class="col-sm-9"><div id="map" class="" style="height: 300px; width: 100%; "></div>
+        </div>
+    </div>
+
+     <div class="maps-box row">
+        <div class="col-sm-3">
+
+            <h3 class="firstColour">Ireland office</h3>
+            <p><b>Visit us</b><br>
+            15 Merrion Street Upper<br>
+            Dublin 2<br>
+            Ireland</p>
+            <p><b>Call us</b><br>
+            Mon-Fri<br>
+            08.00-18.00<br>
+            +353 5765436346</p>
+
+        </div>
+        <div class="col-sm-9"><div id="map2" class="" style="height: 300px; width: 100%; "></div>
+        </div>
+    </div>
+
+
+     <div class="maps-box row">
+        <div class="col-sm-3">
+
+            <h3 class="firstColour">US office</h3>
+            <p><b>Visit us</b><br>
+            15 Wall Street<br>
+            10005 New York<br>
+            US</p>
+            <p><b>Call us</b><br>
+            Mon-Fri<br>
+            08.00-18.00<br>
+            +1 5765436346</p>
+
+        </div>
+        <div class="col-sm-9"><div id="map3" class="" style="height: 300px; width: 100%; "></div>
+        </div>
     </div>
 
 

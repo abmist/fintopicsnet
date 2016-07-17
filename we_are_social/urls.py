@@ -54,7 +54,6 @@ urlpatterns = [
     url(r'^blog/', include('reusable_blog.urls'), name='blog'),
 
 
-
     # Forum URLs
     url(r'^forum/$', forum_views.forum, name='forum'),
     url(r'^threads/(?P<subject_id>\d+)/$', forum_views.threads, name='threads'),

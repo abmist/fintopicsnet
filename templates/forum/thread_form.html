@@ -11,15 +11,13 @@
 
 {% block content %}
 
-    <div class="basic-box">
-        <section class="container">
-            <div class="col-md-9">
+    <div class="basic-box dotted-background">
+        <section class="row ">
+
                 <form method="post" action="{% url 'new_thread' subject.id %}">
                     {% csrf_token %}
+                <div class="col-md-4">
                     {{ thread_form | as_bootstrap }}
-                    <hr>
-                    {{ post_form | as_bootstrap }}
-
                     <div id="poll_form" class="form-group">
                         {{ poll_form|as_bootstrap }}
                         {{ poll_subject_formset.management_form }}
@@ -27,12 +25,26 @@
                             {{ poll_subject_form|as_bootstrap }}
                         {% endfor %}
                     </div>
+                 </div>
+                <div class="col-md-8">
+                    {{ post_form | as_bootstrap }}
 
-                    <div class="form-group">
-                        <button type="submit" class="btn-primary">Post New Thread</button>
+                    <div class=" row buttons-form">
+
+                        <div class="col-sm-6 form-group">
+                            <button type="submit" class="btn btn-default standard-style-button"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Send</button>
+                        </div>
+                        <div id="if-not-sure-sending" class="col-sm-6">
+                         If not sure: &nbsp;&nbsp; <a href="{% url 'threads' subject.id %}"  class="btn btn-default btn-md standard-style-button">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Threads
+                                    </a>
+                            </div>
                     </div>
+                </div>
+
+
                 </form>
-            </div>
+
         </section>
     </div>
 
