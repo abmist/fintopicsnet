@@ -16,6 +16,12 @@
                     <div class="col-sm-5"><b>LAST POST</b></div>
                     <div class="col-sm-7">{% last_posted_user_name thread %}</div>
                 </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5"><b>TAGS</b></div>
+                    <div class="col-sm-7">{{ thread.tag }}</div>
+                </div>
+
 
 
                 <hr>
@@ -26,14 +32,18 @@
                     </p>
                 {% endif %}
 
-                <h3 class="secondColour">Back to subjects menu?</h3>
-
-                    <br><a href="{% url 'forum' %}"  class="btn btn-default btn-md standard-style-button">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Subjects
-                                    </a>
+               
             </div>
+
             <div class="col-sm-9">
                 <div class="row ">
+                <div class="col-sm-12">
+                         {% if thread.poll %}
+                            {% csrf_token %}
+                            {% include 'forum/poll.html' %}
+                        {% endif %}
+                    </div>
+                    
                    {% for post in thread.posts.all %}
                        <div class="col-sm-12 shades" >
                             {% include "forum/post.html" %}

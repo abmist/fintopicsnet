@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="basic-box">
-        <h2>Success!</h2>
-        <p>You are logged in as {{ user.email }} </p>
-        <p>Your stripe id is {{ user.stripe_id }} </p>
-        <h2>Subscription Details</h2>
-        <p>You have {{ user.subscription_end|timeuntil}} left on your subscription</p>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Success!</h2>
+            <hr>
+            <h3 class="secondColour">Account info</h3>
+        <p>You are logged in as <span class="firstColour"><b>{{ user.email }}</b></span> </p>
+        <p>Your stripe id is <b>{{ user.stripe_id }}</b> </p>
+        <hr>
+        <h3 class="secondColour">Subscription Details</h3>
+        <p>You have <b>{{ user.subscription_end|timeuntil}}</b> left on your subscription</p>
         <p>To cancel your subscription click 'Cancel Subscription' below</p>
         <p>
+        <br>
             <a href="{% url "cancel_subscription" %}"
                onclick="return cancelSubscriptionCheck();"
-               class="btn btn-danger">Cancel Subscription</a>
+               class="btn btn-md btn-danger">Cancel Subscription</a>
         </p>
+        </div>
+        <div class="col-sm-8"></div>
+    </div>
+        
     </div>
 
     <script type="text/javascript">

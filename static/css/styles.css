@@ -16,8 +16,16 @@
 		padding: 5% 4%;
 	}
 
+
+
+
 	.maps-box {
 		padding: 3% 4%;
+	}
+
+	.map-dimensions {
+		height: 300px;
+		
 	}
 
 	.navbar {
@@ -298,7 +306,7 @@
 	}
 
 	.shades {
-		margin-bottom: 2%;
+		margin-top: 2%;
 		padding: 4%;
 		background-color: #fbfbfb;
 		border-left: 2px solid #42586e;
@@ -310,7 +318,7 @@
 		margin-right: 3%;
 	}
 
-	#slide-1 {
+	#carousel-slide-1 {
 			background-image: url("images/about_3.jpg");
 			background-repeat:no-repeat;
 			background-size:cover;
@@ -320,7 +328,7 @@
 
 		}
 
-		#slide-2 {
+		#carousel-slide-2 {
 			background-image: url("images/about_2.jpg");
 			background-repeat:no-repeat;
 			background-size:cover;
@@ -329,7 +337,7 @@
 			margin: 4% 0%;
 		}
 
-		#slide-3 {
+		#carousel-slide-3 {
 			background-image: url("images/about_9.jpg");
 			background-repeat:no-repeat;
 			background-size:cover;
@@ -337,6 +345,73 @@
 			width: 100%;
 			margin: 4% 0%;
 		}
+
+		#about-intro {
+		padding-top: 1%;
+
+	}
+
+
+
+		.about-header {
+			padding-left: 3%;
+		padding-right: 3%;
+			background-color: #49497a;
+		color: white;
+		letter-spacing:0px;
+		font-size: 120%;
+		font-weight: 200;
+
+		}
+
+		.about-header-section {
+			margin-bottom: 2%;
+		}
+
+		.about-internal-box{
+			margin: 3% 3%;
+		}
+
+		.box-with-no-lateral-padding-transparent {
+		padding: 3% 0%;
+		background-color: transparent;
+	}
+
+	.box-with-no-lateral-padding-colour {
+		padding: 3% 0%;
+		background-color: #fbfbfb;
+	}
+
+	.about-team {
+	
+		font-size: 600%; letter-spacing: -6px; 
+		color: lightgray; 
+		text-align: center; 
+		display: inline-block;
+	}
+
+	.home-text-image {
+		padding: 0% 3%;
+		margin-top: 50%;
+		font-size: 24px;
+		font-weight: 200;
+		color: #f1f1f1;
+		text-align: center;
+		letter-spacing: -0.2px;
+	}
+
+	.home-internal-box {
+		margin: 5% 3%;
+	}
+
+	.center-button {
+		text-align: center
+	}
+
+	.poll-box {
+		padding: 4% 0% 4% 5% ;
+	}
+
 }
 
 
