@@ -125,3 +125,4 @@ def logout(request):
     auth.logout(request)
     messages.success(request, '')
     return render(request, 'index.html')
+#Me

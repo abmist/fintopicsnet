@@ -1,38 +1,71 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="basic-box">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>Workshops</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.lUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+    <div class="box-with-no-lateral-padding-transparent">
+
+        <div class="row about-internal-box">
+            <div  class="col-sm-3">
+                <h2 class="firstColour">Keep your business updated.</h2>
+                <br>
+                <p>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
-            <div class="col-sm-3"></div>
+            <div id ="" class="col-sm-9"></div>
         </div>
+
+        <div class="row about-internal-box">
+            <div class="col-sm-4">
+                <h2 class="fourthColour">In-company training</h2>
+            </div>
+            <div class="col-sm-4">
+                <hr>
+                <p>Cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-sm-4">
+                <hr>
+                <p>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur esse cillum dolore.</p>
+            </div>
+        </div>
+
+        <div class="row about-internal-box">
+            <div class="col-sm-4">
+                <h2>Summer workshops</h2>
+            </div>
+            <div class="col-sm-4">
+                <hr>
+                <p>Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. La ullamco laboris nisi ut aliquip ex ea commodo consequat. ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+            <div class="col-sm-4">
+                <hr>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse fugiat nulla. Duis aute irure dolor in reprehenderit. Allamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-box">
         <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <table class="table table-responsive table-hover">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th style="padding-right: 60px">Description</th>
-                            <th>Price</th>
-                            <th>Purchase</th>
+                            <th class="table-col-product-name">Name</th>
+                            <th class="table-col-description">Description</th>
+                            <th class="table-col-price">Price</th>
+                            <th class="table-col-purchase">Purchase</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for product in products %}
                             <tr>
-                                <td>{{ product.name }}</td>
-                                <td style="padding-right: 60px">{{ product.description }}</td>
-                                <td>${{ product.price }}</td>
-                                <td>{{ product.paypal_form.sandbox }}</td>
+                                <td class="table-col-name"><b>{{ product.name }}</b></td>
+                                <td class="table-col-description">{{ product.description }}</td>
+                                <td class="table-col-price"> &euro; {{ product.price }}</td>
+                                <td class="table-col-purchase">{{ product.paypal_form.sandbox }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
-            <div class="col-sm-1"></div>
         </div>
     </div>
 {% endblock %}

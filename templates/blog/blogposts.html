@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+{% load bootstrap_tags %}
+
+<div class="basic-box">
+<div class="row">
+    <div id="internal-frame-left-intro" class="col-sm-3">
+        <h2 class="firstColour"> Blog </h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+        <a href="{% url 'new_post'  %}"  class="btn btn-default btn-md standard-style-button">
+                                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp; New post
+                                    </a>
+    </div>
+    <div class="col-sm-9">
+        
+        {% for post in posts %}
+
+    
+
+        <div class="row">
+            
+            <div class="col-md-2 col-sm-3 text-center">
+                <a class="story-img" href="#">
+                    <img src="http://placehold.it/100" style="width:100px; height: 100px; ;" class="img-circle">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+                <h3 class="firstColour">{{ post.title }}</h3><br>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <p>{{ post.content |truncatewords:30  }}</p>
+                        <p><a href="{% url 'post_details' post.id %}"  class="btn btn-default btn-md standard-style-button">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp;Read more
+                                    </a>
+
+
+                        </p>
+                        <p>{{ post.published_date }}     |    <strong>Views</strong> {{ post.views }} |    <strong>Tag</strong> {{ post.tag }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        
+    {% endfor %}
+    </div>
+</div>
+</div>
+
+    
+{% endblock %}
+

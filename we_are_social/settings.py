@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django_forms_bootstrap',
     'paypal.standard.ipn',
-    'debug_toolbar',
+    #'debug_toolbar',
     'rest_framework',
     'tinymce',
     'emoticons',
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'polls',
     'contacts',
     'contact',
+    'blog',
 
 ]
 
@@ -151,6 +152,7 @@ STATIC_ROOT = ''
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+
 )
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
@@ -166,8 +168,9 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_1spV5wHeYbxQohJ5oO
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_4lB7Gs6AEqjCwTdMN12WFgs6')
 
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
+# Code provided: PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 
 
 

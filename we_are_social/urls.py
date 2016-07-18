@@ -27,6 +27,8 @@ from threads import api_views as thread_api_views
 from about import views as about_views
 from contact import views as contact_views
 from contacts import views as contacts_views
+from blog import views as blog_views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -50,8 +52,8 @@ urlpatterns = [
     url(r'^products/$', product_views.all_products, name='products'),
     url(r'^magazines/$', magazine_views.all_magazines),
 
-    # Blog URLs
-    url(r'^blog/', include('reusable_blog.urls'), name='blog'),
+    # Blog reusable URLs
+    #url(r'^blog/', include('reusable_blog.urls'), name='blog'),
 
 
     # Forum URLs
@@ -80,4 +82,12 @@ urlpatterns = [
 
     # Contact URLs
     url(r'^contact/$', contact_views.contact, name='contact'),
+
+    # Blog URLs
+    url(r'^blog$', blog_views.post_list, name="post_list"),
+    url(r'^blog/$', blog_views.post_list, name="post_list"),
+    url(r'^blog/(?P<id>\d+)/$', blog_views.post_details, name="post_details"),
+    url(r'^blog/post/$', blog_views.new_post, name='new_post'),
+
+
 ]

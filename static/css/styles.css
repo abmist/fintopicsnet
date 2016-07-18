@@ -17,7 +17,9 @@
 	}
 
 
-
+	.table-box {
+		padding: 1% 4%;
+	}
 
 	.maps-box {
 		padding: 3% 4%;
@@ -119,6 +121,16 @@
 
 		.secondColour {
 			color: #5f5f9f;
+		}
+
+		.thirdColour {
+			color: #42586e;
+		}
+
+
+
+		.forthColour {
+			color: #fbfbfb;
 		}
 
 
@@ -417,6 +429,33 @@
 		height: 80px; 
 		background-color: #12ABB2; 
 		color: #ffffff;
+	}
+
+	.blog-box {
+        padding: 4% 4% 0% 4%;
+
+    }
+
+
+
+	.table-col-product-name {
+		width: 15%;
+
+	}
+
+	.table-col-description {
+		width: 50%;
+
+	}
+
+	.table-col-price {
+		width: 15%;
+
+	}
+
+	.table-col-purchase {
+		width: 20%;
+
 	}
 
 }
