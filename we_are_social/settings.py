@@ -162,8 +162,8 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', '<replace this with your stripe secre
 
 
 # Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_nbWefqblVg8HnYsFmpcld8qj')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_N35jP51CRqW4FKBMa8MAL1A4')
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_1spV5wHeYbxQohJ5oOF1mjn4')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_4lB7Gs6AEqjCwTdMN12WFgs6')
 
 SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
@@ -171,7 +171,7 @@ PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
 
 
 
-DISQUS_WEBSITE_SHORTNAME = 'blog_app'
+DISQUS_WEBSITE_SHORTNAME = 'was_blog'
 
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #MEDIA_URL = '/static/media/'

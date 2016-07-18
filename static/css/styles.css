@@ -412,6 +412,13 @@
 		padding: 4% 0% 4% 5% ;
 	}
 
+	.image-profile {
+		width:80px; 
+		height: 80px; 
+		background-color: #12ABB2; 
+		color: #ffffff;
+	}
+
 }
 
 
