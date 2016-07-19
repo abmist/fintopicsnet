@@ -1,12 +1,13 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from accounts.models import User
+from django.core.exceptions import ValidationError
 
 
 class UserRegistrationForm(UserCreationForm):
     MONTH_CHOICES = [(i, i,) for i in xrange(1, 12)]
     YEAR_CHOICES = [(i, i,) for i in xrange(2015, 2036)]
-    email = forms.EmailField(required=True) #Added
+    #email = forms.EmailField(required=True) #Added
     credit_card_number = forms.CharField(label='Credit card number')
     cvv = forms.CharField(label='Security code (CVV)')
     expiry_month = forms.ChoiceField(label="Month", choices=MONTH_CHOICES)
@@ -48,7 +49,7 @@ class UserRegistrationForm(UserCreationForm):
         instance = super(UserRegistrationForm, self).save(commit=False)
 
         # automatically set to email address to create a unique identifier
-        instance.email = instance.username
+        instance.email = instance.username   #I've changed the order.
 
         if commit:
             instance.save()
