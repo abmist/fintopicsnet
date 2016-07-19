@@ -16,9 +16,13 @@
 		padding: 5% 4%;
 	}
 
+	.basic-box-2 {
+		margin-bottom: 5%;
+	}
 
 	.table-box {
 		padding: 1% 4%;
+		margin-bottom: 5%;
 	}
 
 	.maps-box {
@@ -51,7 +55,7 @@
 	}
 
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-		color: #0095da;
+		color: #007ab3;
 
 	}
 
@@ -221,8 +225,19 @@
 
 		footer {
 			font-size: 14px;
+			background-color: #e7e7e7;
 
 		}
+
+
+
+		footer.basic-box div.row div.col-sm-2 a {
+		color: #262626;
+	}
+
+		footer.basic-box div.row div.col-sm-2 a:hover {
+		color: #007ab3;
+	}
 
 
 
