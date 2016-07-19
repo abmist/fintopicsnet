@@ -45,11 +45,14 @@ class UserRegistrationForm(UserCreationForm):
             message = "Please enter your email address"
             raise forms.ValidationError(message)
 
+        return email
+
+
     def save(self, commit=True):
         instance = super(UserRegistrationForm, self).save(commit=False)
 
         # automatically set to email address to create a unique identifier
-        instance.email = instance.username   #I've changed the order.
+        instance.username = instance.email
 
         if commit:
             instance.save()
