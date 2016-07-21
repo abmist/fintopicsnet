@@ -1,8 +1,9 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
-from models import Poll, Vote, PollSubject
-from serializers import PollSerializer, VoteSerializer
+from .models import Poll, Vote, PollSubject
+from .serializers import PollSerializer, VoteSerializer
 from threads.models import Thread
+
 
 
 class PollViewSet(generics.ListAPIView):

@@ -36,7 +36,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopicsnet</b></a>
+      <a class="navbar-brand" href="{% url 'home' %}"><span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopicsnet</b></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 
@@ -104,9 +104,6 @@
 <script src="{% static 'js/map_script.js' %}"></script>  <!-- Maps function -->
 <script src="{% static 'js/navbar_behaviour.js' %}"></script>  <!-- Maps function -->
 
-
-
-</body>
 <footer class="basic-box">
     <div class="row">
         <div class="col-sm-2">
@@ -120,18 +117,18 @@
             <a href="{% url 'about' %}">About</a><br>
             <a href="/blog/">Blog</a><br>
             <a href="{% url 'contact' %}">Contact</a><br>
-           
+
 
 
         </div>
 
         <div class="col-sm-2">
-            
+
             <a href="/pages/terms/">Terms and Conditions</a>
             <p>Made By Bootcampers and Django </p>
         </div>
      <div class="col-sm-4">
-         
+
          </div>
         <div class="col-sm-2" style="text-align: right">
             <a href=""><img src="{% static "images/sc_facebook.png" %}" height="24px" width="24px" alt="Facebook link"></a>
@@ -147,6 +144,9 @@
 
 
     </footer>
+
+</body>
+
 
 
 </html>

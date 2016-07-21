@@ -473,6 +473,11 @@
 
 	}
 
+	#tick-vote:hover,
+	#tick-vote:focus {
+		color: #5bc0de;
+	}
+
 }
 
 

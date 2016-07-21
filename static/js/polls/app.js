@@ -41,7 +41,7 @@ pollApp.controller('PollCtrl', function($scope, pollFactory) {
     }
 
     function showError(response) {
-        if(response.data.error !== undefined) {
+        if(response.data.error == undefined) {           // Before !== undefined
             alert(response.data.error);
         }
     }
