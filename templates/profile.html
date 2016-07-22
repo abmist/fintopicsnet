@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="basic-box">
+    <div class="basic-box profile-background">
     <div class="row">
-        <div class="col-sm-4">
-            <h2>Success!</h2>
+    <div class="col-sm-8 "></div>
+        <div  id="profile-info" class="col-sm-4">
+            <h3>Switch <span class="firstColour"><b>on</b></span> your business mode!</h3>
             <hr>
-            <h3 class="secondColour">Account info</h3>
-        <p>You are logged in as <span class="firstColour"><b>{{ user.email }}</b></span> </p>
+            <h3 class="firstColour"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;&nbsp;Account info</h3>
+        <p>You are logged in as <b>{{ user.email }}</b> </p>
         <p>Your stripe id is <b>{{ user.stripe_id }}</b> </p>
         <hr>
-        <h3 class="secondColour">Subscription Details</h3>
+        <h3 class="firstColour"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp;&nbsp;Subscription details</h3>
         <p>You have <b>{{ user.subscription_end|timeuntil}}</b> left on your subscription</p>
-        <p>To cancel your subscription click 'Cancel Subscription' below</p>
+        <p>To cancel your subscription:</p>
         <p>
         <br>
             <a href="{% url "cancel_subscription" %}"
@@ -19,10 +20,11 @@
                class="btn btn-md btn-danger">Cancel Subscription</a>
         </p>
         </div>
-        <div class="col-sm-8"></div>
     </div>
+
         
     </div>
+
 
     <script type="text/javascript">
         function cancelSubscriptionCheck() {

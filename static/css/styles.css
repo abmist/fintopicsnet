@@ -22,6 +22,7 @@
 
 	.table-box {
 		padding: 1% 4%;
+		margin-top: 6%;
 		margin-bottom: 5%;
 	}
 
@@ -174,19 +175,24 @@
 			background-image: url("images/im-4.jpg");
 		}
 
-		.ac {
-			background-image: url("images/im-8.jpg");
+		.profile-background {
+			background-image: url("images/im-10.jpg");
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
-			height: 770px;
+			height: 600px;
 			margin: 0 auto;
 			max-width: 1440px;
-			overflow: hidden;
-			padding: 0;
-			position: relative;
-			width: 100% !important;
 		}
+
+		#profile-info {
+		background-color: rgba(255,255,255, 0.92);
+		padding: 2% 3% 3% 3%;
+
+
+	}
+
+
 
 		.form-frame {
 
@@ -206,12 +212,13 @@
 		a:active,
 		a:visited {
 			text-decoration:none;
+			color: #262626;
 		}
 
 
 		a:hover,
 		a:focus {
-		color: #262626;
+
 		}
 
 		ul{
@@ -478,6 +485,67 @@
 		color: #5bc0de;
 	}
 
+
+
+	.blog-background {
+		background: #f9f9f9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, white, #f9f9f9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, #f9f9f9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, #f9f9f9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, #f9f9f9) /* Standard syntax (must be last) */
+	}
+
+	.blog-background-2 {
+		background-image: url("images/im-17.jpg");
+		background-color: rgba(255,255,255, 1);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+
+	}
+
+	.blog-detail-panel {
+		background-color: rgba(66,88,110,0.7);
+		padding: 4% 4% 4% 4%;
+	}
+
+	.product-image-section {
+		background-image: url("images/im-16.jpg");
+		background-color: rgba(255,255,255, 1);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		height: 500px;
+		width: 100%;
+
+	}
+
+	.product-text-image-1 {
+		background-color: rgba(255,255,255, 0.8);
+		padding: 4% 2% 4% 2%;
+		margin-top: 20%;
+		color: #42586e;
+		text-align: center;
+		letter-spacing: -0.2px;
+	}
+
+	.product-text-image-2 {
+		background-color: rgba(66,88,110,0.7);
+		padding: 4% 2% 4% 2%;
+		margin-top: 20%;
+		color: #fbfbfb;
+		text-align: center;
+		letter-spacing: -0.2px;
+	}
+
+	.blog-detail-panel {
+		background-color: rgba(255,255,255, 0.8);
+		padding: 4% 4% 4% 4%;
+	}
+
+
+
 }
 
 
@@ -504,5 +572,9 @@
 	.internal-frame > a {
 		margin-top: 10%;
 	}
+
+		.carousel-indicators {
+		  bottom: 80px;
+		}
 
  }

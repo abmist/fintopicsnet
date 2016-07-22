@@ -4,10 +4,10 @@
 
     <div class="col-sm-12" >
       <div ng-controller="PollCtrl">
-          <div><strong>Poll - {$ poll.question $} (Total of {$ poll.total_votes $} votes so far)</strong></div>
-          <div>
+          <div><b><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp;&nbsp;<span class="firstColour">{$ poll.question $}</span></b></div>
+
           <br>
-          <p>Here’s how the votes are so far:</p>
+          <p>Total votes: {$ poll.total_votes $}</p>
 
           <div ng-repeat="subject in poll.subjects">
               <div class="col-sm-11">
@@ -22,12 +22,12 @@
                   <div class="progress-bar progress-bar-info"
                           role="progressbar" aria-value="{$ subject.percentage_votes_per_subject $}"
                           aria-valuemin="0" aria-valuemax="100"
-                          style="width:{$ subject.percentage_votes_per_subject $}%">{$ subject.total_votes_per_subject $} Votes
+                          style="width:{$ subject.percentage_votes_per_subject $}%">Votes: {$ subject.total_votes_per_subject $}
                   </div>
                 </div>
               </div>
             </div> <!-- end ng-repeat -->
-          </div>
+
         </div>
     </div>
   </div>
