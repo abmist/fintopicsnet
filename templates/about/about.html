@@ -2,17 +2,17 @@
 {% load staticfiles %}
 {% block content %}
 
-<div class="basic-box">
-    <div class="row">
-        <div id="about-intro" class="col-sm-3">
-            <h2>What can we tell you about us?</h2>
+     <section>
 
-        </div>
+		<video id="home-video" preload="auto" autoplay loop width="100%"  poster="{% static 'images/Email-Scroll.jpg' %}">
+		    <source src="{% static 'video/Email-Scroll.mp4' %}" type="video/mp4"/>
+		   <source src="{% static 'video/Email-Scroll.ogv' %}" type="video/ogg"/>
+		   <source src= "{% static 'video/Email-Scroll.webm' %}" type="video/webm"/>
+		</video>
 
-        <div class="col-sm-9">
-        </div>
-    </div>
-    </div>
+	</section>
+
+
 
 
 
@@ -36,6 +36,8 @@
     </div>
 
 
+
+
 <div class="box-with-no-lateral-padding-colour">
     <div class="row about-internal-box" >
         <div class="col-sm-12 about-header-section"><span class="about-header">Our people</span></div>
@@ -50,6 +52,8 @@
           
     </div>
 </div>
+
+
 
 <div class="box-with-no-lateral-padding-transparent">
         <div class="row about-internal-box">

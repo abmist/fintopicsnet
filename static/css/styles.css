@@ -132,10 +132,17 @@
 			color: #42586e;
 		}
 
-
-
-		.forthColour {
+		.fourthColour {
 			color: #fbfbfb;
+		}
+
+		.fifthColour {
+			color: #545454;
+
+		}
+
+		.secondFont {
+			font-family: "Exo";
 		}
 
 
@@ -414,6 +421,7 @@
 	.box-with-no-lateral-padding-colour {
 		padding: 3% 0%;
 		background-color: #fbfbfb;
+		z-index: 900;
 	}
 
 	.about-team {
@@ -422,6 +430,11 @@
 		color: lightgray; 
 		text-align: center; 
 		display: inline-block;
+	}
+
+	.slogan-summit {
+		text-align: center;
+		padding: 2%;
 	}
 
 	.home-text-image {
@@ -510,18 +523,38 @@
 		padding: 4% 4% 4% 4%;
 	}
 
-	.product-image-section {
-		background-image: url("images/im-16.jpg");
+	.rules-for-section-with-image {
+
 		background-color: rgba(255,255,255, 1);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
 		height: 500px;
-		width: 100%;
+		margin: 0 auto;
+			max-width: 1440px;
+			overflow: hidden;
+			padding: 0;
+			position: relative;
+			width: 100% !important;
+
+
 
 	}
 
-	.product-text-image-1 {
+	.product-background-image {
+		background-image: url("images/im-16.jpg");
+		padding: 0%;
+	}
+
+	.summit-background-image-seats {
+		background-image: url("images/about_16.jpg");
+	}
+
+	.summit-background-image-calendar {
+		background-image: url("images/im-18.jpg");
+	}
+
+	.text-for-section-with-image-1 {
 		background-color: rgba(255,255,255, 0.8);
 		padding: 4% 2% 4% 2%;
 		margin-top: 20%;
@@ -530,7 +563,7 @@
 		letter-spacing: -0.2px;
 	}
 
-	.product-text-image-2 {
+	.text-for-section-with-image-2 {
 		background-color: rgba(66,88,110,0.7);
 		padding: 4% 2% 4% 2%;
 		margin-top: 20%;
