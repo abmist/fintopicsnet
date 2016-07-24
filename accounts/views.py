@@ -24,7 +24,7 @@ stripe.api_key = settings.STRIPE_SECRET
 
 def register(request):
     if request.method == 'POST':
-        form = UserRegistrationForm(request.POST)
+        form = UserRegistrationForm(request.POST, request.FILES)
         if form.is_valid():
             try:
                 customer = stripe.Customer.create(
@@ -44,8 +44,8 @@ def register(request):
 
                 user = auth.authenticate(email=request.POST.get('email'), password=request.POST.get('password1'))
 
-                if 'picture' in request.FILES:
-                    profile.picture = request.FILES['picture']
+                if 'user_profile_picture' in request.FILES:
+                    profile.user_profile_picture = request.FILES['user_profile_picture']
 
                 if user:
                     auth.login(request, user)

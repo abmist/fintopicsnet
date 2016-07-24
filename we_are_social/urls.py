@@ -26,7 +26,6 @@ from polls import api_views
 from threads import api_views as thread_api_views
 from about import views as about_views
 from contact import views as contact_views
-from contacts import views as contacts_views
 from blog import views as blog_views
 
 
@@ -76,10 +75,6 @@ urlpatterns = [
     url(r'^threads/polls/vote/(?P<thread_id>\d+)/$', api_views.VoteCreateView.as_view(), name='create_vote'),
     url(r'^post/update/(?P<pk>\d+)/$', thread_api_views.PostUpdateView.as_view(), name="update-poll"),
     url(r'^post/delete/(?P<pk>\d+)/$', thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
-
-    # Contacts URLs
-    url(r'^contacts/$', contacts_views.get_contacts, name='contacts'),
-    url(r'^contacts_detail/(?P<contact_id>\d+)/$', contacts_views.get_details, name='contacts_detail'),
 
     # About URLs
     url(r'^about/$', about_views.about_map, name='about'),

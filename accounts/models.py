@@ -32,7 +32,7 @@ class User(AbstractUser):
 
     stripe_id = models.CharField(max_length=40, default='')
     subscription_end = models.DateTimeField(default=timezone.now)
-    user_profile_picture = models.ImageField('profile_pic', upload_to='static/images/profiles/', null=True, blank=True)
+    user_profile_picture = models.ImageField('user_profile_picture', upload_to='static/images/profiles/', null=True, blank=True)
     city = models.CharField(max_length=60, default='')
     country = models.CharField(max_length=60, default='')
     education = models.CharField(max_length=200, default='')
