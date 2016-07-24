@@ -52,7 +52,12 @@
 
 
             {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Profile</a></li>
+                <li><a href="#" class="dropdown-toggle " data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;User menu&nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                      <li><a href="{% url 'members' %}">Members</a></li>
+                    </ul>
+                </li>
                 <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Log Out</a></li>
             {% else %}
                 <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;&nbsp;Sign Up</a></li>
@@ -123,6 +128,7 @@
         </div>
 
         <div class="col-sm-2">
+            <a href="{% url 'members' %}">Contact</a><br>
             <a href="/pages/summit/">Fintopics Summit</a><br>
             <a href="/pages/terms/">Terms and Conditions</a>
 

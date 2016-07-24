@@ -1,24 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
+    {% load staticfiles %}
     <div class="basic-box profile-background">
     <div class="row">
-    <div class="col-sm-8 "></div>
+    <div class="col-sm-6 "></div>
+    <div class="col-sm-2 ">
+
+    </div>
         <div  id="profile-info" class="col-sm-4">
-            <h3>Switch <span class="firstColour"><b>on</b></span> your business mode!</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        {% if not user.user_profile_picture %}
+                              <img src="http://placehold.it/100" style="width:50px; height: 50px; ;" class="img-circle">
+                        {% else %}
+                            <img src="/{{ user.user_profile_picture }}" height="70px" width="70px">
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-9 full-name-profile">
+                        <p><b>{{ user.first_name }} {{ user.last_name }}</b> </p>
+                    </div>
+                </div>
             <hr>
             <h3 class="firstColour"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;&nbsp;Account info</h3>
+
         <p>You are logged in as <b>{{ user.email }}</b> </p>
         <p>Your stripe id is <b>{{ user.stripe_id }}</b> </p>
+        <br>
+         <a href=""  class="btn btn-default btn-md standard-style-button">
+                                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;Edit account info
+                                    </a>
         <hr>
         <h3 class="firstColour"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>&nbsp;&nbsp;Subscription details</h3>
         <p>You have <b>{{ user.subscription_end|timeuntil}}</b> left on your subscription</p>
-        <p>To cancel your subscription:</p>
         <p>
         <br>
             <a href="{% url "cancel_subscription" %}"
                onclick="return cancelSubscriptionCheck();"
-               class="btn btn-md btn-danger">Cancel Subscription</a>
+               class="btn btn-md btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>&nbsp;&nbsp;Cancel subscription</a>
         </p>
+
+            <hr>
+            <h3 class="firstColour"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;&nbsp;Members</h3>
+            <p>Look up our members.</p>
+        <p>
+            <p>
+        <br>
+            <a href="{% url "members" %}"
+               class="btn btn-default btn-md standard-style-button"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp;&nbsp;Members</a>
+        </p>
+
         </div>
     </div>
 

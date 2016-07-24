@@ -20,7 +20,7 @@ from paypal.standard.ipn import urls as paypal_urls
 from paypal_store import views as paypal_views
 from products import views as product_views
 from magazines import views as magazine_views
-from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook
+from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook, get_users, get_user_details, update_profile
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
@@ -40,6 +40,10 @@ urlpatterns = [
     url(r'^profile/$', profile, name='profile'),
     url(r'^login/$', login, name='login'),
     url(r'^logout/$', logout, name='logout'),
+    url(r'^members/$', get_users, name='members'),
+    url(r'^member_detail/(?P<user_id>\d+)/$', get_user_details, name='member_detail'),
+    url(r'^member_update/$', update_profile, name='member_update'),
+
 
     # Stripe URLS
     url(r'^cancel_subscription/$', cancel_subscription, name='cancel_subscription'),

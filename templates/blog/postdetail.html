@@ -7,9 +7,15 @@
     <div class="basic-box blog-background">
        <div class="row">
             <div class="col-md-2 col-sm-3 text-center">
-                <a class="story-img" href="#">
-                    <img src="http://placehold.it/100" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
-                </a>
+            <a class=" post-author-fullname" href="{% url 'member_detail' post.author.id %}">
+                    {% if post.author.user_profile_picture %}
+                        <img src="/{{ post.author.user_profile_picture}}" height="100px" width="100px">
+                    {% else %}
+                        <img src="http://placehold.it/100" style="width:100px; height: 100px;" class="img-circle">
+                    {% endif %}
+
+                <h5> {{ post.author.first_name }} {{ post.author.last_name }}</h5>
+            </a>
             </div>
             <div class="col-md-10 col-sm-9">
                 <h2 class="thirdColour">{{ post.title }}</h2><br>
@@ -22,7 +28,7 @@
                         <p>{{ post.content }}</p>
                         <br>
                         <button class="btn btn-md btn-default standard-style-button" onclick="location.href='/blog'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Back to blog</button><hr>
-                        <p>{{ post.published_date }}     |    <strong>Views</strong> {{ post.views }} |    <strong>Tag</strong> {{ post.tag }}</p>
+                        <p>{{ post.published_date }}     &nbsp;|&nbsp;   <strong>VIEWS</strong> {{ post.views }} &nbsp;|&nbsp;     <strong>TAGS</strong> {{ post.tag }}</p>
                         {% load disqus_tags %}
                         {% set_disqus_title post.title %}
                         {% disqus_show_comments %}

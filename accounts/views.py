@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 
 from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.core.urlresolvers import reverse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.template.context_processors import csrf
 from django.conf import settings
 import datetime
@@ -13,6 +13,11 @@ from models import User
 import stripe
 import arrow
 import json
+from django.http import Http404, HttpResponseRedirect
+
+from forms import UpdateProfileForm
+
+
 
 stripe.api_key = settings.STRIPE_SECRET
 
@@ -38,6 +43,9 @@ def register(request):
                 user.save()
 
                 user = auth.authenticate(email=request.POST.get('email'), password=request.POST.get('password1'))
+
+                if 'picture' in request.FILES:
+                    profile.picture = request.FILES['picture']
 
                 if user:
                     auth.login(request, user)
@@ -127,3 +135,34 @@ def logout(request):
     return render(request, 'index.html')
 
 #End
+
+
+
+def get_users(request):
+    return render(request, "members.html", {'user_list': User.objects.all()})
+
+
+def get_user_details(request, user_id):
+    try:
+        user = User.objects.filter(pk=user_id)
+    except User.DoesNotExist:
+        raise Http404("Noooo")
+    return render(request, "member_detail.html", {'details': user })
+
+
+# Just a test. I'll delete it too.
+def update_profile(request):
+    args = {}
+
+    if request.method == 'POST':
+        update_profile_form = UpdateProfileForm(request.POST, instance=request.user)
+
+        if update_profile_form.is_valid():
+            update_profile_form.save()
+            return HttpResponseRedirect(reverse('profile'))
+
+    else:
+        update_profile_form = UpdateProfileForm()
+
+    args['update_profile_form'] = update_profile_form
+    return render(request, 'update_profile.html', args)

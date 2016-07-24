@@ -27,21 +27,23 @@
         <div class="row">
             
             <div class="col-md-2 col-sm-3 text-center">
+                {% comment %}
                 <a class="story-img" href="#">
                     <img src="http://placehold.it/100" style="width:100px; height: 100px; ;" class="img-circle">
                 </a>
+                {% endcomment %}
             </div>
             <div class="col-md-10 col-sm-9">
                 <h3 class="firstColour">{{ post.title }}</h3><br>
                 <div class="row">
                     <div class="col-xs-9">
                         <p>{{ post.content |truncatewords:30  }}</p>
+                        <br>
                         <p><a href="{% url 'post_details' post.id %}"  class="btn btn-default btn-md standard-style-button">
                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp;Read more
                                     </a>
-
-
                         </p>
+                        <br>
                         <p>{{ post.published_date }}     &nbsp;|&nbsp;    <strong>WIEWS</strong> {{ post.views }} &nbsp; |&nbsp;    <strong>TAGS</strong> {{ post.tag }}</p>
                     </div>
                 </div>

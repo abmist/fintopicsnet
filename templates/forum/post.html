@@ -4,16 +4,26 @@
 
 <section class="row comment" >
     <div class="col-sm-3 comment-profile" >
-        <div class="comment-content" >
-        <p><img src="http://placehold.it/100" class="img-circle image-profile"></p><br> <!--Maybe it's better create a specific folder for profile pics. -->
-        <p class="firstColour"><b>{{ post.user.username }}</b></p>
-        <p>{{ post.user.posts.count }} Posts</p>
+        <div class="comment-content">
+        <a class=" post-author-info" href="{% url 'member_detail' post.user.id %}">
+
+                {% if post.user.user_profile_picture %}
+
+                     <img src="/{{ post.user.user_profile_picture}}" height="50px" width="50px">
+                {% else %}
+                     <img src="http://placehold.it/100" style="width:50px; height: 50px;" class="img-circle">
+                {% endif %}
+
+            <h5 class="post-author-fullname"><b>{{ post.user.first_name}} {{ post.user.last_name}}</b></h5>
+        </a>
+        {% comment %}<p>{{ post.user.username }}</p>{% endcomment %}
+        <p>{{ post.user.posts.count }} posts</p>
         <p><b>Post reference</b> # {{ post.id }}</p>
             </div>
 
     </div>
     <div class="col-sm-9" >
-        <div class="comment-content">
+        <div class="comment-content-text">
             {% autoescape off %}
                 {{ post.comment|emoticons }}
             {% endautoescape %}
