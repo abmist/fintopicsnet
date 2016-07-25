@@ -5,7 +5,8 @@ from .models import Thread, Post
 class ThreadForm(forms.ModelForm):
 
     name = forms.CharField(label="Thread name")
-    is_a_poll = forms.BooleanField(label="Include a poll?", required=False)
+
+    tag = forms.CharField(label="Tags")
 
     class Meta:
         model = Thread
