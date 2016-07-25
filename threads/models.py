@@ -12,7 +12,6 @@ class Subject(models.Model):
     def __unicode__(self):
         return self.name
 
-
 class Thread(models.Model):
 
     name = models.CharField(max_length=255)

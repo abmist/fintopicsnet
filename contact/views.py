@@ -23,7 +23,6 @@ def contact(request):
             send_mail(contact_name, message, sender, recipients)
             return redirect('contact')
 
-
     else:
         form = ContactForm()
 

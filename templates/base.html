@@ -1,13 +1,15 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>We Are Social</title>
+    <title>Fintopicsnet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Vendors .................. -->
     <link rel="stylesheet" href="{% static 'css/font-awesome-4.5.0/css/font-awesome.css' %}">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -20,66 +22,50 @@
     <!-- Fonts .................. -->
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Exo:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Needed for polls .................. -->
     <script type="text/javascript">
         var pollID = {{ thread.poll.id }};
     </script>
     {% block head_js %}{% endblock %}
 </head>
 <body>
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'home' %}"><span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopicsnet</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
 
-
-<nav id="nav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{% url 'home' %}"><span class="glyphicon glyphicon-tree-conifer"></span>&nbsp;<b>Fintopicsnet</b></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="/"{% if request.path == "/" %}class="active-pg" {% endif %}>Home</a></li>
-      <li><a href="/products/"{% if request.path == "/products/" %}class="active-pg"{% endif %}>Training</a></li>
-      <!-- <li><a href="/magazines/"{% if request.path == "/magazines/" %}class="active-pg"{% endif %}>Magazines</a></li> -->
-      <li><a href="/forum/"{% if request.path == "/forum/" %}class="active-pg"{% endif %}>Forum</a></li>
-      <!-- <li><a href="/contacts/"{% if request.path == "/contacts/" %}class="active-pg"{% endif %}>Contacts</a></li> -->
-      <li><a href="/blog/"{% if request.path == "/blog/" %}class="active-pg"{% endif %}>Blog</a></li>
-      <li><a href="/about/"{% if request.path == "/about/" %}class="active-pg"{% endif %}>About</a></li>
-      <li><a href="/contact/"{% if request.path == "/contact/" %}class="active-pg"{% endif %}>Contact</a></li>
-
-
-            {% if user.is_authenticated %}
-                <li><a href="#" class="dropdown-toggle " data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;User menu&nbsp;<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
-                      <li><a href="{% url 'members' %}">Members</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Log Out</a></li>
-            {% else %}
-                <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;&nbsp;Sign Up</a></li>
-                <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log In</a></li>
-            {% endif %}
-
-
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-
-
-
-
-
-
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"{% if request.path == "/" %}class="active-pg" {% endif %}>Home</a></li>
+                    <li><a href="/products/"{% if request.path == "/products/" %}class="active-pg"{% endif %}>Training</a></li>
+                    <!-- <li><a href="/magazines/"{% if request.path == "/magazines/" %}class="active-pg"{% endif %}>Magazines</a></li> -->
+                    <li><a href="/forum/"{% if request.path == "/forum/" %}class="active-pg"{% endif %}>Forum</a></li>
+                    <li><a href="/blog/"{% if request.path == "/blog/" %}class="active-pg"{% endif %}>Blog</a></li>
+                    <li><a href="/about/"{% if request.path == "/about/" %}class="active-pg"{% endif %}>About</a></li>
+                    <li><a href="/contact/"{% if request.path == "/contact/" %}class="active-pg"{% endif %}>Contact</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="#" class="dropdown-toggle " data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;User menu&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'profile' %}">Profile</a></li>
+                                <li><a href="{% url 'members' %}">Members</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Log Out</a></li>
+                    {% else %}
+                        <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;&nbsp;Sign Up</a></li>
+                        <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log In</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     {% if messages %}
         <div class="alert alert-success">
@@ -91,68 +77,48 @@
         </div>
     {% endif %}
 
+    {% block content %}
+    {% endblock %}
 
-        {% block content %}
-        {% endblock %}
+    <!-- Google Maps .......................-->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true&key=AIzaSyBF54G0Ldz0NMWeozy2XjNQQYgihxFdKAU"></script> -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static 'js/map_script.js' %}"></script>  <!-- Maps function -->
+    
+    <!-- Polls scripts .....................-->
+    <script src="{% static 'js/polls/app.js' %}"></script>
+    <!-- Script to shrink then navbar  .....................-->
+    <script src="{% static 'js/navbar_behaviour.js' %}"></script> 
 
-
-
-
-
-
-
-
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true&key=AIzaSyBF54G0Ldz0NMWeozy2XjNQQYgihxFdKAU"></script> -->
-<script src="http://maps.googleapis.com/maps/api/js"></script><!-- Google Maps -->
-<script src="{% static 'js/polls/app.js' %}"></script>
-<script src="{% static 'js/map_script.js' %}"></script>  <!-- Maps function -->
-<script src="{% static 'js/navbar_behaviour.js' %}"></script>  <!-- Maps function -->
-
-<footer class="basic-box">
-    <div class="row">
-        <div class="col-sm-2">
-            <a href="{% url 'home' %}">Home</a><br>
-            <a href="{% url 'products' %}">Training</a><br>
-            <a href="{% url 'forum' %}">Forum</a><br>
-
+    <footer class="basic-box">
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="{% url 'home' %}">Home</a><br>
+                <a href="{% url 'products' %}">Training</a><br>
+                <a href="{% url 'forum' %}">Forum</a><br>
+            </div>
+            <div class="col-sm-2">
+                <a href="/blog/">Blog</a><br>
+                <a href="{% url 'about' %}">About</a><br>
+                <a href="{% url 'contact' %}">Contact</a><br>
+            </div>
+            <div class="col-sm-2">
+                <a href="/pages/summit/">Fintopics Summit</a><br>
+                <a href="/pages/terms/">Terms and Conditions</a>
+            </div>
+            <div class="col-sm-4">
+                <p>Made By Bootcampers and Django </p>
+            </div>
+            <div class="col-sm-2 text-right">
+                <a href=""><img src="{% static "images/sc_facebook.png" %}" height="24px" width="24px" alt="Facebook link"></a>
+                <a href=""><img src="{% static "images/sc_linkedin.png" %}" height="24px" width="24px" alt="LinkedIn link"></a>
+                <a href=""><img src="{% static "images/sc_pinterest.png" %}" height="24px" width="24px" alt="Pinterest link"></a>
+                <a href=""><img src="{% static "images/sc_twitter.png" %}" height="24px" width="24px" alt="Twitter link"></a>
+                <br><br>
+                <b>© 2016 Fintopicsnet</b>
+            </div>
         </div>
-
-        <div class="col-sm-2">
-            <a href="{% url 'about' %}">About</a><br>
-            <a href="/blog/">Blog</a><br>
-            <a href="{% url 'contact' %}">Contact</a><br>
-
-
-
-        </div>
-
-        <div class="col-sm-2">
-            <a href="{% url 'members' %}">Contact</a><br>
-            <a href="/pages/summit/">Fintopics Summit</a><br>
-            <a href="/pages/terms/">Terms and Conditions</a>
-
-        </div>
-     <div class="col-sm-4">
-<p>Made By Bootcampers and Django </p>
-         </div>
-        <div class="col-sm-2" style="text-align: right">
-            <a href=""><img src="{% static "images/sc_facebook.png" %}" height="24px" width="24px" alt="Facebook link"></a>
-            <a href=""><img src="{% static "images/sc_linkedin.png" %}" height="24px" width="24px" alt="LinkedIn link"></a>
-            <a href=""><img src="{% static "images/sc_pinterest.png" %}" height="24px" width="24px" alt="Pinterest link"></a>
-            <a href=""><img src="{% static "images/sc_twitter.png" %}" height="24px" width="24px" alt="Twitter link"></a>
-            <br><br>
-            <b>© 2016 Fintopicsnet</b>
-
-        </div>
-
-    </div>
-
-
     </footer>
-
 </body>
-
-
 
 </html>

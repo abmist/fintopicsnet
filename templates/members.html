@@ -1,12 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="basic-box">
-
-
         <div class="row">
             <div id="internal-frame-left-intro" class="col-sm-3">
                 <h2 class="firstColour">Members</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip.
@@ -24,25 +21,13 @@
                                 {% endif %}
                             </div>
                         </div>
-                    <div class="col-sm-9">
-
-                        <p class="firstColour"><b>{{ user.first_name }} {{ user.last_name }}</b></p>
-
-
-                    </div>
-                    <div class="col-sm-2">
-
-                    <a href="{% url 'member_detail' user.id %}"  class="btn btn-default btn-md standard-style-button">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp;More info
-                                    </a>
-                    </div>
-
-                    </div>
-
-
-
-
-
+                        <div class="col-sm-9">
+                            <p class="firstColour"><b>{{ user.first_name }} {{ user.last_name }}</b></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="{% url 'member_detail' user.id %}" class="btn btn-default btn-md standard-style-button"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>&nbsp;More info</a>
+                        </div>
+                   </div>
                 {% endfor %}
             </div>
         </div>

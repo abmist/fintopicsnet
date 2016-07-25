@@ -148,7 +148,6 @@ def delete_post(request, post_id):
 
     return redirect(reverse('thread', args={thread_id}))
 
-
 @login_required
 def thread_vote(request, thread_id, subject_id):
     thread = Thread.objects.get(Thread, pk=thread_id)    #I've added Thread, and changed id > pk

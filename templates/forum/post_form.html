@@ -1,44 +1,32 @@
 {% extends 'base.html' %}
 {% load bootstrap_tags %}
 {% load staticfiles %}
-
 {% block head_js %}
     <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
     <script>
-    tinyMCE.init({
-        mode: "textareas",
-        theme: "modern",
-        plugins: "paste"
-    });
+        tinyMCE.init({
+            mode: "textareas",
+            theme: "modern",
+            plugins: "paste"
+        });
     </script>
 {% endblock %}
 {% block content %}
-    <div class="basic-box dotted-background">
-        <section class="row ">
-
-                <form method="post" action="{{ form_action }}">
-                    {% csrf_token %}
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    {{ form | as_bootstrap }}
-
-                    <div class=" row buttons-form">
-
-                        <div class="col-sm-6 form-group">
-                            <button type="submit" class="btn btn-md btn-default standard-style-button"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Send</button>
-                        </div>
-
+<div class="basic-box dotted-background">
+    <section class="row ">
+        <form method="post" action="{{ form_action }}">
+            {% csrf_token %}
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                {{ form | as_bootstrap }}
+                <div class=" row buttons-form">
+                    <div class="col-sm-6 form-group">
+                        <button type="submit" class="btn btn-md btn-default standard-style-button"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Send</button>
                     </div>
                 </div>
-                    <div class="col-sm-2"></div>
-
-
-                </form>
-
-        </section>
-    </div>
-
-
-
-
+            </div>
+            <div class="col-sm-2"></div>
+        </form>
+    </section>
+</div>
 {% endblock %}
