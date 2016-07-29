@@ -1,38 +1,36 @@
+/***
+
+COLOR PALETTE
+	- Basic background colour: #fff (white) or trnasparent;
+	- Main text colour (most of paragraphs): #333;
+	- Colours for titles, some specific backgrounds, buttons, etc (contrast purpose):
+		color:#49497a;
+		color: #5f5f9f;
+		color: #42586e;
+		color: #fbfbfb;
+		color: #545454;
+
+FONTS
+	- Main fonts: 'Titillium Web', sans-serif
+	- Secondary font: 'Exo'
+
+CSS STRUCTURE
+	This file is divided into two main parts based on @media rules:
+		- @media only screen
+		- @media only screen and (min-width: 400px)
+	Inside the first one, rules are classified into two blocks:
+		- Rules used in more than one page
+		- Rules only applied in a specific page
+
+***/
+
+
 @media only screen {
+	
 	body {
-	padding-top: 60px;
+		padding-top: 60px;
 		font-family: 'Titillium Web', sans-serif;
 		font-size: 14px;
-	}
-
-
-
-	.container {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.basic-box {
-		padding: 5% 4%;
-	}
-
-	.basic-box-2 {
-		margin-bottom: 5%;
-	}
-
-	.table-box {
-		padding: 1% 4%;
-		margin-top: 6%;
-		margin-bottom: 5%;
-	}
-
-	.maps-box {
-		padding: 3% 4%;
-	}
-
-	.map-dimensions {
-		height: 300px;
-		
 	}
 
 	.navbar {
@@ -57,16 +55,11 @@
 
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 		color: #007ab3;
-
 	}
-
-
-
-
+	
 	nav.navbar.mini {
 		min-height: 35px;
 		background-color: #f0f0f0;
-
 	}
 
 	nav.navbar.mini .navbar-brand {
@@ -76,193 +69,118 @@
 	nav.navbar.mini  a {
 		padding-top: 20px !important;
 		padding-bottom: 18px !important;
-	  }
+  	}
 
 	.active-pg {
 		font-weight: bold;
 	}
 
 	h1 {
-			font-size: 500%;
-			letter-spacing: -7px;
-			font-weight: 600;
+		font-size: 500%;
+		letter-spacing: -7px;
+		font-weight: 600;
 		}
 
-		h2 {
-			letter-spacing:-3px;
-			font-size: 300%;
-			line-height: 100%;
-		}
-
-		h3 {
-			letter-spacing:-0.7px;
-			font-size: 160%;
-			line-height: 110%;
-		}
-
-		h4 {
-			letter-spacing:-0.7px;
-			font-size: 140%;
-			line-height: 110%;
-		}
-
-		h5 {
-			letter-spacing:-0.2px;
-			font-size: 120%;
-			line-height: 130%;
-			font-weight: 400;
-			color: #3c3c3c;
-
-		}
-
-		h6 {
-			font-size: 90%;
-			color: slategray;
-		}
-
-		.firstColour {
-			color:#49497a;
-		}
-
-		.secondColour {
-			color: #5f5f9f;
-		}
-
-		.thirdColour {
-			color: #42586e;
-		}
-
-		.fourthColour {
-			color: #fbfbfb;
-		}
-
-		.fifthColour {
-			color: #545454;
-
-		}
-
-		.secondFont {
-			font-family: "Exo";
-		}
-
-
-		#wrapper {
-			box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
-			margin: 0 auto;
-			max-width: 1440px;
-			width: 100% !important;
-		}
-
-		.parallax-standard-block {
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 770px;
-			margin: 0 auto;
-			max-width: 1440px;
-			overflow: hidden;
-			padding: 0;
-			position: relative;
-			width: 100% !important;
-		}
-
-		.intro-steps-1 {
-			background-image: url("images/im-1.jpg");
-		}
-
-		.intro-steps-2 {
-			background-image: url("images/im-2.jpg");
-		}
-
-		.intro-steps-3 {
-			background-image: url("images/im-3.jpg");
-		}
-
-		.intro-steps-4 {
-			background-image: url("images/im-4.jpg");
-		}
-
-		.profile-background {
-			background-image: url("images/im-10.jpg");
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 800px;
-			margin: 0 auto;
-			max-width: 1440px;
-		}
-
-		#profile-info {
-		background-color: rgba(255,255,255, 0.95);
-		padding: 3% 3% 3% 3%;
-
-
+	h2 {
+		letter-spacing:-3px;
+		font-size: 300%;
+		line-height: 100%;
 	}
 
+	h3 {
+		letter-spacing:-0.7px;
+		font-size: 160%;
+		line-height: 110%;
+	}
 
+	h4 {
+		letter-spacing:-0.7px;
+		font-size: 140%;
+		line-height: 110%;
+	}
 
-		.form-frame {
+	h5 {
+		letter-spacing:-0.2px;
+		font-size: 120%;
+		line-height: 130%;
+		font-weight: 400;
+		color: #3c3c3c;
+	}
 
-			padding-top: 9%;
-			padding-bottom: 9%;
-		}
+	h6 {
+		font-size: 90%;
+		color: slategray;
+	}
 
-
-		legend {
-			color:#5f5f9f;
-			letter-spacing:-0.7px;
-		}
-
-		a,
-		a:hover,
-		a:focus,
-		a:active,
-		a:visited {
-			text-decoration:none;
-			color: #262626;
-		}
-
-
-		a:hover,
-		a:focus {
-
-		}
-
-		ul{
-			list-style-type:none;
-		}
-
-		.terms {
-			padding-left: 3%;
-			padding-right: 3%;
-		}
-
-		footer {
-			font-size: 14px;
-			background-color: #e7e7e7;
-
-		}
-
-
-
-		footer.basic-box div.row div.col-sm-2 a {
+	a,
+	a:hover,
+	a:focus,
+	a:active,
+	a:visited {
+		text-decoration:none;
 		color: #262626;
 	}
 
-		footer.basic-box div.row div.col-sm-2 a:hover {
+	ul{
+		list-style-type:none;
+	}
+
+	.firstColour {
+		color:#49497a;
+	}
+
+	.secondColour {
+		color: #5f5f9f;
+	}
+
+	.thirdColour {
+		color: #42586e;
+	}
+
+	.fourthColour {
+		color: #fbfbfb;
+	}
+
+	.fifthColour {
+		color: #545454;
+	}
+
+	.secondFont {
+		font-family: "Exo";
+	}
+
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	footer {
+		font-size: 14px;
+		background-color: #e7e7e7;
+	}
+
+	footer.basic-box div.row div.col-sm-2 a {
+		color: #262626;
+	}
+
+	footer.basic-box div.row div.col-sm-2 a:hover {
 		color: #007ab3;
 	}
 
+	.basic-box {
+		padding: 5% 4%;
+	}
+
+	.basic-box-2 {
+		margin-bottom: 5%;
+	}
 
 
 	.internal-frame {
-		 margin-bottom: 2%;
+	 	margin-bottom: 2%;
 		padding-bottom: 12%;
 		border-bottom: thin solid lightgray;
-
-
 	}
-
 
 	.internal-frame > table {
 		margin-top: 8%;
@@ -270,14 +188,6 @@
 
 	.internal-frame > a {
 		margin-top: 8%;
-	}
-
-	th {
-		color:#49497a;
-	}
-
-	.gap-between-table-elements {
-		padding-right: 12%;
 	}
 
 	#internal-frame-left-intro {
@@ -302,6 +212,14 @@
 		line-height: 20%;
 	}
 
+	th {
+		color:#49497a;
+	}
+
+	.gap-between-table-elements {
+		padding-right: 12%;
+	}
+
 	.standard-style-button:hover,
 	.standard-style-button:focus {
 		background-color: #42586e;
@@ -309,113 +227,9 @@
 		border-color: #42586e;
 	}
 
-	.thread-list-item {
-		border-left: 2px solid #42586e;
-		margin: 0% 4% 4% 4%;
-		background-color: #fbfbfb;
-		padding-top: 2%;
-		padding-bottom: 2%;
-	}
-
-	.thread-list-item:hover,
-	.thread-list-item:focus {
-
-		background-color: #e6ebf0;
-	}
-
-
-
-	.thread-list {
-		margin-top: 6%;
-	}
-	.buttons-form {
-		margin-top: 4%;
-	}
-
-	#if-not-sure-sending {
-		text-align: right;
-	}
-
-	.dotted-background {
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
-	}
-
-	.shades {
-		margin-top: 2%;
-		padding: 4%;
-		background-color: #fbfbfb;
-		border-left: 2px solid #42586e;
-	}
-
-
-	.comment-content {
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-
-	#carousel-slide-1 {
-			background-image: url("images/about_3.jpg");
-			background-repeat:no-repeat;
-			background-size:cover;
-			height: 500px;
-			width: 100%;
-		margin: 4% 0%;
-
-		}
-
-		#carousel-slide-2 {
-			background-image: url("images/about_2.jpg");
-			background-repeat:no-repeat;
-			background-size:cover;
-			height: 500px;
-			width: 100%;
-			margin: 4% 0%;
-		}
-
-		#carousel-slide-3 {
-			background-image: url("images/about_9.jpg");
-			background-repeat:no-repeat;
-			background-size:cover;
-			height: 500px;
-			width: 100%;
-			margin: 4% 0%;
-		}
-
-		#about-intro {
-		padding-top: 1%;
-
-	}
-
-
-
-		.about-header {
-			padding-left: 3%;
-		padding-right: 3%;
-			background-color: #49497a;
-		color: white;
-		letter-spacing:0px;
-		font-size: 120%;
-		font-weight: 200;
-
-		}
-
-		.about-header-section {
-			margin-bottom: 2%;
-		}
-
-		.about-internal-box{
-			margin: 3% 3%;
-		}
-
-		.box-with-no-lateral-padding-transparent {
-		padding: 3% 0%;
-		background-color: transparent;
+	.box-with-no-lateral-padding-transparent {
+	padding: 3% 0%;
+	background-color: transparent;
 	}
 
 	.box-with-no-lateral-padding-colour {
@@ -424,30 +238,7 @@
 		z-index: 900;
 	}
 
-	.about-team {
-	
-		font-size: 600%; letter-spacing: -6px; 
-		color: lightgray; 
-		text-align: center; 
-		display: inline-block;
-	}
-
-	.slogan-summit {
-		text-align: center;
-		padding: 2%;
-	}
-
-	.home-text-image {
-		padding: 0% 3%;
-		margin-top: 50%;
-		font-size: 24px;
-		font-weight: 200;
-		color: #f1f1f1;
-		text-align: center;
-		letter-spacing: -0.2px;
-	}
-
-	.home-internal-box {
+	.internal-box-for-content {
 		margin: 5% 3%;
 	}
 
@@ -455,103 +246,18 @@
 		text-align: center
 	}
 
-	.poll-box {
-		padding: 4% 0% 4% 5% ;
-	}
-
-	.image-profile {
-		width:80px; 
-		height: 80px; 
-		background-color: #12ABB2; 
-		color: #ffffff;
-	}
-
-	.blog-box {
-        padding: 4% 4% 0% 4%;
-
-    }
-
-
-
-	.table-col-product-name {
-		width: 15%;
-
-	}
-
-	.table-col-description {
-		width: 50%;
-
-	}
-
-	.table-col-price {
-		width: 15%;
-
-	}
-
-	.table-col-purchase {
-		width: 20%;
-
-	}
-
-	#tick-vote:hover,
-	#tick-vote:focus {
-		color: #5bc0de;
-	}
-
-
-
-	.blog-background {
-		background: #f9f9f9; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, white, #f9f9f9); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, white, #f9f9f9); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, white, #f9f9f9); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, white, #f9f9f9) /* Standard syntax (must be last) */
-	}
-
-	.blog-background-2 {
-		background-image: url("images/im-17.jpg");
-		background-color: rgba(255,255,255, 1);
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-
-
-	}
-
-	.blog-detail-panel {
-		background-color: rgba(66,88,110,0.7);
-		padding: 4% 4% 4% 4%;
-	}
-
 	.rules-for-section-with-image {
-
 		background-color: rgba(255,255,255, 1);
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
 		height: 500px;
 		margin: 0 auto;
-			max-width: 1440px;
-			overflow: hidden;
-			padding: 0;
-			position: relative;
-			width: 100% !important;
-
-
-
-	}
-
-	.product-background-image {
-		background-image: url("images/im-16.jpg");
-		padding: 0%;
-	}
-
-	.summit-background-image-seats {
-		background-image: url("images/about_16.jpg");
-	}
-
-	.summit-background-image-calendar {
-		background-image: url("images/im-18.jpg");
+		max-width: 1440px;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		width: 100% !important;
 	}
 
 	.text-for-section-with-image-1 {
@@ -572,11 +278,258 @@
 		letter-spacing: -0.2px;
 	}
 
-	.blog-detail-panel {
-		background-color: rgba(255,255,255, 0.8);
-		padding: 4% 4% 4% 4%;
+	ul.dropdown-menu {
+		text-align: center;
+		min-width: 127px;
 	}
 
+	.post-author-fullname {
+		padding-top: 5%;
+	}
+
+	/* Parallax effect */
+	#wrapper {
+		box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+		margin: 0 auto;
+		max-width: 1440px;
+		width: 100% !important;
+	}
+
+	.parallax-standard-block {
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 770px;
+		margin: 0 auto;
+		max-width: 1440px;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		width: 100% !important;
+	}
+	/* End parallax effect */
+
+	/* INDEX (specific rules) ------------------------ */
+
+	.intro-steps-1 {
+		background-image: url("images/im-1.jpg");
+	}
+
+	.intro-steps-2 {
+		background-image: url("images/im-2.jpg");
+	}
+
+	.intro-steps-3 {
+		background-image: url("images/im-3.jpg");
+	}
+
+	.intro-steps-4 {
+		background-image: url("images/im-4.jpg");
+	}
+
+	.home-text-image {
+		padding: 0% 3%;
+		margin-top: 50%;
+		font-size: 24px;
+		font-weight: 200;
+		color: #f1f1f1;
+		text-align: center;
+		letter-spacing: -0.2px;
+	}
+
+	/* TRAINING/PRODUCTS (specific rules) ------------------------ */
+
+	.table-box {
+		padding: 1% 4%;
+		margin-top: 6%;
+		margin-bottom: 5%;
+	}
+
+	.table-col-product-name {
+		width: 15%;
+	}
+
+	.table-col-description {
+		width: 50%;
+	}
+
+	.table-col-price {
+		width: 15%;
+	}
+
+	.table-col-purchase {
+		width: 20%;
+	}
+
+	.product-background-image {
+		background-image: url("images/im-16.jpg");
+		padding: 0%;
+	}
+
+	/* ABOUT (specific rules) ------------------------ */
+
+	.maps-box {
+		padding: 3% 4%;
+	}
+
+	.map-dimensions {
+		height: 300px;	
+	}
+
+	.carousel-slides {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 500px;
+		width: 100%;
+		margin: 4% 0%;
+	}
+
+	#carousel-image-1 {
+		background-image: url("images/about_3.jpg");
+	}
+
+	#carousel-image-2 {
+		background-image: url("images/about_2.jpg");
+	}
+
+	#carousel-image-3 {
+		background-image: url("images/about_9.jpg");
+	}
+
+	#about-intro {
+		padding-top: 1%;
+	}
+
+	.header-style-for-small-section {
+		padding-left: 3%;
+		padding-right: 3%;
+		background-color: #49497a;
+		color: white;
+		letter-spacing:0px;
+		font-size: 120%;
+		font-weight: 200;
+		}
+
+	.small-section-with-header {
+		margin-bottom: 2%;
+	}
+
+	.internal-box-for-content-with-title{
+		margin: 3% 3%;
+	}
+
+	.about-team {
+		font-size: 600%; letter-spacing: -6px; 
+		color: lightgray; 
+		text-align: center; 
+		display: inline-block;
+	}
+
+	/* PROFILE (specific rules) ------------------------ */
+
+	.profile-background {
+		background-image: url("images/im-10.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 800px;
+		margin: 0 auto;
+		max-width: 1440px;
+	}
+
+	#profile-info {
+		background-color: rgba(255,255,255, 0.95);
+		padding: 3% 3% 3% 3%;
+	}
+
+	.full-name-profile {
+		padding: 5% 0% 3% 3%
+	}
+
+	/* SUMMIT (specific rules) ---------------------------------- */
+	
+	.slogan-summit {
+		text-align: center;
+		padding: 2%;
+	}
+
+	.summit-background-image-seats {
+		background-image: url("images/about_16.jpg");
+	}
+
+	.summit-background-image-calendar {
+		background-image: url("images/im-18.jpg");
+	}
+
+	/* BLOG (specific rules) ---------------------------------- */
+	
+	.blog-box {
+        padding: 4% 4% 0% 4%;
+    }
+
+    .blog-background {
+		background: #f9f9f9; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(left top, white, #f9f9f9); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(right, white, #f9f9f9); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, white, #f9f9f9); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, white, #f9f9f9) /* Standard syntax (must be last) */
+	}
+
+	/* FORUM, SUBJECTS, THREADS (specific rules) ---------------------------------- */
+
+	.thread-list-item {
+		border-left: 2px solid #42586e;
+		margin: 0% 4% 4% 4%;
+		background-color: #fbfbfb;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	.thread-list-item:hover,
+	.thread-list-item:focus {
+		background-color: #e6ebf0;
+	}
+
+	.thread-list {
+		margin-top: 6%;
+	}
+
+	.shades {
+		margin-top: 2%;
+		padding: 4%;
+		background-color: #fbfbfb;
+		border-left: 2px solid #42586e;
+	}
+
+	.comment-content {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.poll-box {
+		padding: 4% 0% 4% 5% ;
+	}
+
+	#tick-vote:hover,
+	#tick-vote:focus {
+		color: #5bc0de;
+	}
+
+	.post-author-info:hover,
+	.post-author-info:focus {
+		color: #3299CC;
+	}
+
+	.comment-content-text {
+		margin: 1% 3% 1% 3%;
+	}
+
+	.comment-content {
+		padding-top: 6%;
+	}
+
+	/* MEMBERS (specific rules) ---------------------------------- */
+	
 	.members-elements {
 		padding: 0% 5% 5% 0% ;
 	}
@@ -590,32 +543,44 @@
 		padding: 0% 0% 5% 5%;
 	}
 
-	.full-name-profile {
-		padding: 5% 0% 3% 3%
+	/* TERMS (specific rules) ---------------------------------- */
+	
+	.terms {
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 
-	ul.dropdown-menu {
-		text-align: center;
-		min-width: 127px;
+	/* Rules for FORMS (specific rules applied in any of these forms: 
+	loggin; register; contact; blog new post; forum new thread; forum new post; forum edit post) ------------------------ */
+
+	.form-frame {
+		padding-top: 9%;
+		padding-bottom: 9%;
 	}
 
-	.post-author-info:hover,
-	.post-author-info:focus {
-		color: #3299CC;
+	legend {
+		color:#5f5f9f;
+		letter-spacing:-0.7px;
 	}
 
-	.post-author-fullname {
-		padding-top: 5%;
+	.buttons-form {
+		margin-top: 4%;
 	}
 
-	.comment-content-text {
-		margin: 1% 3% 1% 3%;
+	#if-not-sure-sending {
+		text-align: right;
 	}
 
-	.comment-content {
-		padding-top: 6%;
+	.dotted-background {
+		background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+		background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+		background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+		background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+		-webkit-background-size: 3px 3px;
+		-moz-background-size: 3px 3px;
+		background-size: 3px 3px;
 	}
-
+		
 }
 
 
@@ -627,13 +592,11 @@
 		border-bottom: thin solid #fff;
 	}
 
-
 	.thread-list-item {
 		margin: 0% 0% 1% 0%;
 		padding-top: 0%;
 		padding-bottom: 0%;
 	}
-
 
 	.internal-frame > table {
 		margin-top: 10%;
@@ -643,15 +606,14 @@
 		margin-top: 10%;
 	}
 
-		.carousel-indicators {
-		  bottom: 80px;
-		}
+	.carousel-indicators {
+	  	bottom: 80px;
+	}
 
 	.member-details-image {
-			padding-bottom: 5%;
-			text-align: left;
-
-		}
+		padding-bottom: 5%;
+		text-align: left;
+	}
 
 	.comment-content-text {
 		margin: 3% 3% 1% 3%;

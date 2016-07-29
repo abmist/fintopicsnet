@@ -28,9 +28,11 @@ def new_thread(request, subject_id):
         post_form = PostForm(request.POST)
         poll_form = PollForm(request.POST)
         poll_subject_formset = poll_subject_formset(request.POST)
-        if thread_form.is_valid() and post_form.is_valid()\
-                and poll_form.is_valid() \
-                and poll_subject_formset.is_valid():
+
+        all_forms = [thread_form, post_form, poll_form, poll_subject_formset]
+        all_forms_valid = all(f.is_valid() for f in all_forms)
+        if all_forms_valid:
+
             thread = thread_form.save(False)
             thread.subject = subject
             thread.user = request.user
