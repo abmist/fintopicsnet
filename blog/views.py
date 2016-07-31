@@ -11,18 +11,18 @@ def post_list(request):
     """
     Create a view that will return a
     list of Posts that were published prior to'now'
-    and render them to the 'blogposts.html' template
+    and render them to the 'blog_posts.html' template
     """
     posts = PostBlog.objects.filter(published_date__lte = timezone.now()
         ).order_by('-published_date')
-    return render(request, "blog/blogposts.html", {'posts': posts})
+    return render(request, "blog/blog_posts.html", {'posts': posts})
 
 @login_required
 def post_details(request, id):
     post = get_object_or_404(PostBlog, pk=id)
     post.views += 1
     post.save()
-    return render(request, "blog/postdetail.html", {'post': post})
+    return render(request, "blog/blog_post_detail.html", {'post': post})
 
 @login_required
 def new_post(request):
@@ -36,4 +36,4 @@ def new_post(request):
             return redirect(post_details, post.pk)
     else:
         form = BlogPostForm()
-    return render(request, 'blog/blogpostform.html', {'form': form})
+    return render(request, 'blog/blog_post_form.html', {'form': form})

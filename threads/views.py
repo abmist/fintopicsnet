@@ -20,46 +20,58 @@ def threads(request, subject_id):
 
 
 @login_required
-def new_thread(request, subject_id):
-    subject = get_object_or_404(Subject, pk=subject_id)
-    poll_subject_formset = formset_factory(PollSubjectForm, extra=3)
-    if request.method == "POST":
-        thread_form = ThreadForm(request.POST)
-        post_form = PostForm(request.POST)
-        poll_form = PollForm(request.POST)
-        poll_subject_formset = poll_subject_formset(request.POST)
+def new_thread_post(request, subject, poll_subject_formset):
+    thread_form = ThreadForm(request.POST)
+    post_form = PostForm(request.POST)
+    poll_form = PollForm(request.POST)
+    poll_subject_formset = poll_subject_formset(request.POST)
 
-        all_forms = [thread_form, post_form, poll_form, poll_subject_formset]
-        all_forms_valid = all(f.is_valid() for f in all_forms)
-        if all_forms_valid:
+    all_forms = [thread_form, post_form, poll_form, poll_subject_formset]
+    all_forms_valid = all(f.is_valid() for f in all_forms)
+    if all_forms_valid:
 
-            thread = thread_form.save(False)
-            thread.subject = subject
-            thread.user = request.user
-            thread.save()
+        thread = thread_form.save(False)
+        thread.subject = subject
+        thread.user = request.user
+        thread.save()
 
-            post = post_form.save(False)
-            post.user = request.user
-            post.thread = thread
-            post.save()
+        post = post_form.save(False)
+        post.user = request.user
+        post.thread = thread
+        post.save()
 
-            poll = poll_form.save(False)
-            poll.thread = thread
-            poll.save()
+        poll = poll_form.save(False)
+        poll.thread = thread
+        poll.save()
 
-            for subject_form in poll_subject_formset:
-                subject = subject_form.save(False)
-                subject.poll = poll
-                subject.save()
+        for subject_form in poll_subject_formset:
+            subject = subject_form.save(False)
+            subject.poll = poll
+            subject.save()
 
-            messages.success(request, "You have created a new thread!")
+        messages.success(request, "You have created a new thread!")
 
-            return redirect(reverse('thread', args={thread.pk}))
+        return redirect(reverse('thread', args={thread.pk}))
+
     else:
-        thread_form = ThreadForm()
-        post_form = PostForm(request.POST)
-        poll_form = PollForm()
-        poll_subject_formset = poll_subject_formset()
+        args = {
+            'thread_form': thread_form,
+            'post_form': post_form,
+            'subject': subject,
+            'poll_form': poll_form,
+            'poll_subject_formset': poll_subject_formset
+        }
+
+        args.update(csrf(request))
+
+        return render(request, 'forum/thread_form.html', args)
+
+@login_required
+def new_thread_get(request, subject, poll_subject_formset):
+    thread_form = ThreadForm()
+    post_form = PostForm(request.POST)
+    poll_form = PollForm()
+    poll_subject_formset = poll_subject_formset()
 
     args = {
         'thread_form': thread_form,
@@ -74,32 +86,53 @@ def new_thread(request, subject_id):
     return render(request, 'forum/thread_form.html', args)
 
 
+@login_required
+def new_thread(request, subject_id):
+    subject = get_object_or_404(Subject, pk=subject_id)
+    poll_subject_formset = formset_factory(PollSubjectForm, extra=3)
+    if request.method == "POST":
+        return new_thread_post(request, subject, poll_subject_formset)
+    else:
+        assert request.method == 'GET'
+        return new_thread_get(request, subject, poll_subject_formset)
+
+
 def thread(request, thread_id):
     thread_ = get_object_or_404(Thread, pk=thread_id)
     args = {'thread': thread_}
     args.update(csrf(request))
     return render(request, 'forum/thread.html', args)
 
-
 @login_required
-def new_post(request, thread_id):
-    thread = get_object_or_404(Thread, pk=thread_id)
+def new_post_post(request, thread):
+    form = PostForm(request.POST)
+    if form.is_valid():
+        post = form.save(False)
+        post.thread = thread
+        post.user = request.user
+        post.save()
 
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(False)
-            post.thread = thread
-            post.user = request.user
-            post.save()
+        messages.success(request,
+                         "Your post has been added to the thread!")
 
-            messages.success(request,
-                             "Your post has been added to the thread!")
-
-            return redirect(reverse('thread', args={thread.pk}))
+        return redirect(reverse('thread', args={thread.pk}))
 
     else:
-        form = PostForm()
+
+        args = {
+            'form': form,
+            'form_action': reverse('new_post', args={thread.id}),
+            'button_text': 'Send new post'
+        }
+
+        args.update(csrf(request))
+
+        return render(request, 'forum/post_form.html', args)
+
+
+@login_required
+def new_post_get(request, thread):
+    form = PostForm()
 
     args = {
         'form': form,
@@ -111,6 +144,14 @@ def new_post(request, thread_id):
 
     return render(request, 'forum/post_form.html', args)
 
+@login_required
+def new_post(request, thread_id):
+    thread = get_object_or_404(Thread, pk=thread_id)
+    if request.method == "POST":
+        return new_post_post(request, thread)
+    else:
+        assert request.method == 'GET'
+        return new_post_get(request, thread)
 
 @login_required
 def edit_post(request, thread_id, post_id):

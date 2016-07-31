@@ -53,8 +53,8 @@
                     {% if user.is_authenticated %}
                         <li><a href="#" class="dropdown-toggle " data-toggle="dropdown" ><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;User menu&nbsp;<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{% url 'profile' %}">Profile</a></li>
-                                <li><a href="{% url 'members' %}">Members</a></li>
+                                <li class="text-center"><a href="{% url 'profile' %}">Profile</a></li>
+                                <li class="text-center"><a href="{% url 'members' %}">Members</a></li>
                             </ul>
                         </li>
                         <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Log Out</a></li>
