@@ -137,11 +137,11 @@ def logout(request):
 #End
 
 
-
+@login_required
 def get_users(request):
     return render(request, "members.html", {'user_list': User.objects.all()})
 
-
+@login_required
 def get_user_details(request, user_id):
     try:
         user = User.objects.filter(pk=user_id)

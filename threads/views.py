@@ -13,7 +13,7 @@ from polls.models import PollSubject
 def forum(request):
     return render(request, 'forum/forum.html', {'subjects': Subject.objects.all()})
 
-
+@login_required
 def threads(request, subject_id):
     subject = get_object_or_404(Subject, pk=subject_id)
     return render(request, 'forum/threads.html', {'subject': subject})

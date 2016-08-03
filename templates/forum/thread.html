@@ -11,7 +11,7 @@
                 <div class="col-sm-5"><b>CREATED</b></div>
                 <div class="col-sm-7"><time datetime="{{ thread.created_at }}">{{ thread.created_at | started_time }}</time></div>
                 <div class="col-sm-5"><b>OWNER</b></div>
-                <div class="col-sm-7">{{ thread.user.username }}</div>
+                <div class="col-sm-7"> <a  href="{% url 'member_detail' thread.user.id %}">{{ thread.user.first_name }} {{ thread.user.last_name }}</a></div>
                 <div class="col-sm-5"><b>LAST POST</b></div>
                 <div class="col-sm-7">{% last_posted_user_name thread %}</div>
             </div>
