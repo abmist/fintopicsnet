@@ -41,7 +41,7 @@ It contains an **account management which deals with user registrations and auth
 	 
 
 ## Style
-The aim was to create a *totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
+The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
 ## Main features
 * Member functionalities: log in, log out, member list, member detailed info, etc.
