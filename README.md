@@ -1,7 +1,7 @@
 # Project 3 for Code Institute - Fintopicsnet
 ## Introduction
 
-This project is a **social entrepreneurship network** that allows for the exchange of business ideas –*an online meeting point for entrepreneurs and funders*-. It has been built with Python using Django and a relational database. 
+This project is a **social entrepreneurship network** that allows for the exchange of business ideas –*an online meeting point for entrepreneurs and funders*-. It has been built with [Python] (https://www.python.org/) using [Django] (https://www.djangoproject.com/) and a relational database. 
 
 ## Structure
 
