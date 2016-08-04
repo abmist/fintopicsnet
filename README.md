@@ -97,7 +97,7 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 * Flatpages
 
 ## Technology stack
-* Non relational database: MySQL/SQLite
+* Relational database: MySQL/SQLite
 * [Django] (https://www.djangoproject.com/)
 * [Angular.js] (https://angularjs.org/)
 * [Bootstrap] (https://www.http://getbootstrap.com//)
