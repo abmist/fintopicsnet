@@ -17,6 +17,12 @@ It contains an **account management which deals with user registrations and auth
 
 ![Profile](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_profile.jpg)
 
+If you want to test it, to register yourself use the following credit card data:
+  * *Credit card number: 4242424242424242*
+  * *CVV: 123*
+  * *Expiration month: 9*
+  * *Expiration year: 2033*
+
 **Forum with polls**
 * Members can engage in discussion about different types of business topics within the membership community.
 * There are several **subjects** (like finance, marketing, strategy, etc.). Only a superuser can create them. Non-members can see them but they can’t access to their content.
