@@ -39,13 +39,3 @@ class User(AbstractUser):
     interest = models.CharField(max_length=100, default='')
     objects = AccountUserManager()
 
-    def is_subscribed(self, magazine):
-        try:
-            purchase = self.purchases.get(magazine__pk=magazine.pk)
-        except Exception:
-            return False
-
-        if purchase.subscription_end > timezone.now():
-            return False
-
-        return True
