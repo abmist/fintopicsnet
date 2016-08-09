@@ -11,11 +11,17 @@ It contains an **account management which deals with user registrations and auth
 
 ![Home](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_home.jpg)
 
-![Log_in](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
-
 ![Register](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_register.jpg)
 
+![Log_in](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
+
 ![Profile](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+
+If you want to test it, to register yourself use the following credit card data:
+  * *Credit card number: 4242424242424242*
+  * *CVV: 123*
+  * *Expiration month: 9*
+  * *Expiration year: 2033*
 
 **Forum with polls**
 * Members can engage in discussion about different types of business topics within the membership community.
@@ -45,11 +51,13 @@ It contains an **account management which deals with user registrations and auth
 **About**
 * It explains useful information about the site and the company.
 * It also includes Google maps for showing where offices are located. 
-* 
+
 ![About](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_about.jpg)
 
 **Contact**
 * A **form** that allows any member or potential member **to ask any kind of question to the staff**. 
+
+![Contact](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_contact.jpg)
 
 **Blog for articles**
 * This blog enables members to **share articles** where they can explain business ideas, experiences, etc.
@@ -66,6 +74,8 @@ It contains an **account management which deals with user registrations and auth
 * It also includes a link to another page (flatpage) which contains details about a summit (another project named Fintopics).  
 
 ![Training_service_pruchase](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_training_service_purchase.jpg)
+
+![Summit](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_summit.jpg)
 
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
@@ -87,7 +97,7 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 * Flatpages
 
 ## Technology stack
-* Non relational database: MySQL/SQLite
+* Relational database: MySQL/SQLite
 * [Django] (https://www.djangoproject.com/)
 * [Angular.js] (https://angularjs.org/)
 * [Bootstrap] (https://www.http://getbootstrap.com//)
