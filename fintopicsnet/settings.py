@@ -74,7 +74,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
-ROOT_URLCONF = 'we_are_social.urls'
+ROOT_URLCONF = 'fintopicsnet.urls'
 
 TEMPLATES = [
     {
@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'we_are_social.wsgi.application'
+WSGI_APPLICATION = 'fintopicsnet.wsgi.application'
 
 
 # Database

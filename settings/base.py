@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
-ROOT_URLCONF = 'we_are_social.urls'
+ROOT_URLCONF = 'fintopicsnet.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'we_are_social.wsgi.application'
+WSGI_APPLICATION = 'fintopicsnet.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -100,5 +100,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
-                               "tinymce", "tinymce.min.js")
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js")
