@@ -12,7 +12,8 @@
     <section class="row">
         <form method="post" action="{% url 'new_thread' subject.id %}">
             {% csrf_token %}
-            <div class="col-md-4">
+
+            <div class="col-md-4"><!-- Left half of form -->
                 {{ thread_form | as_bootstrap }}
                 <div id="poll_form" class="form-group">
                     {{ poll_form | as_bootstrap }}
@@ -21,8 +22,9 @@
                         {{ poll_subject_form|as_bootstrap }}
                     {% endfor %}
                 </div>
-            </div>
-            <div class="col-md-8">
+            </div><!-- End left half of form -->
+
+            <div class="col-md-8"><!-- Right half of form -->
                 {{ post_form | as_bootstrap }}
                 <div class=" row buttons-form">
                     <div class="col-sm-6 form-group">
@@ -32,7 +34,8 @@
                      If not sure: &nbsp;&nbsp; <a href="{% url 'threads' subject.id %}"  class="btn btn-default btn-md standard-style-button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Threads</a>
                     </div>
                 </div>
-            </div>
+            </div><!-- End right half of form -->
+
         </form>
     </section>
 </div>

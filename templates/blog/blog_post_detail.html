@@ -3,8 +3,8 @@
 {% load bootstrap_tags %}
  {% load staticfiles %}
 <div class="basic-box blog-background">
-   <div class="row">
-        <div class="col-md-2 col-sm-3 text-center">
+   <article class="row">
+        <div class="col-md-2 col-sm-3 text-center"><!-- Profile picture and link to author info -->
             <a class=" post-author-fullname" href="{% url 'member_detail' post.author.id %}">
                 {% if post.author.user_profile_picture %}
                     <img src="/{{ post.author.user_profile_picture}}" height="100px" width="100px">
@@ -13,8 +13,8 @@
                 {% endif %}
                 <h5>{{ post.author.first_name }} {{ post.author.last_name }}</h5>
             </a>
-        </div>
-        <div class="col-md-10 col-sm-9">
+        </div><!-- End profile picture and link to author info -->
+        <article class="col-md-10 col-sm-9">
             <h2 class="thirdColour">{{ post.title }}</h2>
             <br>
             <div class="row">
@@ -33,7 +33,7 @@
                     {% disqus_show_comments %}
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 </div>
 {% endblock %}

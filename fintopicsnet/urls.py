@@ -1,25 +1,10 @@
-"""we_are_social URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/1.9/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.conf.urls import url, include
-    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
-"""
 from django.conf.urls import url, include
 from django.contrib import admin
 from home import views
 from paypal.standard.ipn import urls as paypal_urls
 from paypal_store import views as paypal_views
 from products import views as product_views
-from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook, get_users, get_user_details, update_profile
+from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook, get_users, get_user_details
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
@@ -40,8 +25,6 @@ urlpatterns = [
     url(r'^logout/$', logout, name='logout'),
     url(r'^members/$', get_users, name='members'),
     url(r'^member_detail/(?P<user_id>\d+)/$', get_user_details, name='member_detail'),
-    url(r'^member_update/$', update_profile, name='member_update'),
-
 
     # Stripe URLS
     url(r'^cancel_subscription/$', cancel_subscription, name='cancel_subscription'),
@@ -81,6 +64,4 @@ urlpatterns = [
     url(r'^blog/$', blog_views.post_list, name="post_list"),
     url(r'^blog/(?P<id>\d+)/$', blog_views.post_details, name="post_details"),
     url(r'^blog/post/$', blog_views.new_post, name='new_post'),
-
-
 ]

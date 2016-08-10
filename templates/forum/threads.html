@@ -3,7 +3,8 @@
 {% block content %}
 <div class="basic-box">
     <div class="row">
-        <div id ="internal-frame-left-intro" class="col-sm-3">
+
+        <div id ="internal-frame-left-intro" class="col-sm-3"><!-- Lateral introduction -->
             <h2>{{ subject.name }}</h2>
             {% autoescape off %}
                 {{ subject.description }}
@@ -30,7 +31,8 @@
                     </ul>
                 </div>
             </section>
-        </div>
+        </div><!-- End lateral introduction -->
+
         <div class="col-sm-9">
             <div class="row">
                 <div class="col-sm-4 ">
@@ -55,7 +57,7 @@
                 <div class="col-sm-4">
                     <hr>
                     <h3>Maybe the thread that you're
-                        <br>interested in does't fit
+                        <br>interested in doesn't fit
                         <br> this subject.</h3>
                         <br>
                         <a href="{% url 'forum' %}" class="btn btn-default btn-md standard-style-button">
@@ -73,6 +75,7 @@
                 </div><!-- End col-sm-12 inside of col-sm-9 -->
             </div><!-- End row -->
         </div><!-- End col-sm-9 -->
+
     </div><!-- End row -->
 </div><!-- End basic-box -->
 {% endblock %}

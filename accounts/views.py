@@ -18,7 +18,6 @@ from django.http import Http404, HttpResponseRedirect
 from forms import UpdateProfileForm
 
 
-
 stripe.api_key = settings.STRIPE_SECRET
 
 
@@ -28,7 +27,6 @@ def register(request):
         if form.is_valid():
             try:
                 customer = stripe.Customer.create(
-
                     email=form.cleaned_data['email'],
                     card=form.cleaned_data['stripe_id'],
                     plan='REG_MONTHLY',
@@ -69,11 +67,9 @@ def register(request):
 def cancel_subscription(request):
     try:
         customer = stripe.Customer.retrieve(request.user.stripe_id)
-
         customer.cancel_subscription(at_period_end=True)
     except Exception, e:
         messages.error(request, e)
-
     return redirect('profile')
 
 
@@ -134,9 +130,6 @@ def logout(request):
     messages.success(request, '')
     return render(request, 'index.html')
 
-#End
-
-
 @login_required
 def get_users(request):
     return render(request, "members.html", {'user_list': User.objects.all()})
@@ -148,21 +141,3 @@ def get_user_details(request, user_id):
     except User.DoesNotExist:
         raise Http404("Noooo")
     return render(request, "member_detail.html", {'details': user })
-
-
-# Just a test. I'll delete it too.
-def update_profile(request):
-    args = {}
-
-    if request.method == 'POST':
-        update_profile_form = UpdateProfileForm(request.POST, instance=request.user)
-
-        if update_profile_form.is_valid():
-            update_profile_form.save()
-            return HttpResponseRedirect(reverse('profile'))
-
-    else:
-        update_profile_form = UpdateProfileForm()
-
-    args['update_profile_form'] = update_profile_form
-    return render(request, 'update_profile.html', args)

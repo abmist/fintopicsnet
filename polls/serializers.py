@@ -15,7 +15,6 @@ class PollSubjectSerializer(serializers.ModelSerializer):
     total_votes_per_subject = serializers.SerializerMethodField()
     percentage_votes_per_subject = serializers.SerializerMethodField()
 
-
     class Meta:
         model = PollSubject
         fields = ('id', 'name', 'votes', 'total_votes_per_subject', 'percentage_votes_per_subject')

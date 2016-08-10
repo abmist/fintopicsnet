@@ -4,7 +4,8 @@
 {% load bootstrap_tags %}
 <div class="basic-box">
     <div class="row">
-        <div id ="internal-frame-left-intro" class="col-sm-3">
+
+        <div id ="internal-frame-left-intro" class="col-sm-3"><!-- Lateral introduction -->
             <h2 class="firstColour">What do you want to talk about?</h2>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
              <table>
@@ -25,7 +26,8 @@
                     {% endfor %}
                 </ul>
               </div></section>
-        </div>
+        </div><!-- End lateral introduction -->
+
         <div class="col-sm-9">
             <div class="row">
                 {% for subject in subjects %}
@@ -48,6 +50,7 @@
                 {% endfor %}
             </div>
         </div>
+
     </div>
 </div>
 {% endblock %}

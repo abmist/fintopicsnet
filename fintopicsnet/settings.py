@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'tinymce',
     'emoticons',
     'disqus',
-    #'reusable_blog',
     'home',
     'accounts',
     'paypal_store',
@@ -70,7 +69,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware', #Redunding?
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
@@ -150,17 +149,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js")
 
-#Stripe environment variables
-#STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', '<replace this with your stripe publishable code>')
-#STRIPE_SECRET = os.getenv('STRIPE_SECRET', '<replace this with your stripe secret code>')
-
-
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_1spV5wHeYbxQohJ5oOF1mjn4')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_4lB7Gs6AEqjCwTdMN12WFgs6')
 
 SITE_URL = 'http://127.0.0.1:8000'
-# Code provided: PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 

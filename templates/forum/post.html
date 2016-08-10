@@ -1,7 +1,8 @@
 {% load staticfiles %}
 {% load emoticons_tags %}
 <section class="row comment" >
-    <div class="col-sm-3 comment-profile" >
+
+    <div class="col-sm-3 comment-profile">
         <div class="comment-content">
             <a class=" post-author-info" href="{% url 'member_detail' post.user.id %}">
                 {% if post.user.user_profile_picture %}
@@ -11,11 +12,11 @@
                 {% endif %}
                 <h5 class="post-author-fullname"><b>{{ post.user.first_name}} {{ post.user.last_name}}</b></h5>
             </a>
-        {% comment %}<p>{{ post.user.username }}</p>{% endcomment %}
             <p>{{ post.user.posts.count }} posts</p>
             <p><b>Post reference</b> # {{ post.id }}</p>
         </div>
     </div>
+
     <div class="col-sm-9" >
         <div class="comment-content-text">
             {% autoescape off %}
@@ -23,8 +24,10 @@
             {% endautoescape %}
         </div>
     </div>
+
     <div class="col-sm-12" >
         <hr>
         {% include "forum/comment_details.html" %}
     </div>
+
 </section>
