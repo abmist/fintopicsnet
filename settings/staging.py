@@ -19,5 +19,5 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_4lB7Gs6AEqjCwTdMN12WFgs6')
 
 # Paypal environment variables
 SITE_URL = 'http://fintopicsnet.herokuapp.com'
-PAYPAL_NOTIFY_URL = '.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'http://fintopicsnet.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'

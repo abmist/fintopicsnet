@@ -20,7 +20,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_4lB7Gs6AEqjCwTdMN12WFgs6')
 
 # Paypal environment variables
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'http://fintopicsnet.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 
 # Setting for sending emails: Contact form.
