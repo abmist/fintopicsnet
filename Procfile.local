@@ -1,1 +1,1 @@
-web: gunicorn fintopicsnet.wsgi:application --settings=settings.dev
+web: python manage.py runserver
