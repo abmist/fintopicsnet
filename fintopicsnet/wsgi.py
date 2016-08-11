@@ -1,5 +1,5 @@
 """
-WSGI config for we_are_social project.
+WSGI config for fintopicsnet project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

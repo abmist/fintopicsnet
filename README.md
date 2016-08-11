@@ -82,37 +82,37 @@ If you want to test it, to register yourself use the following credit card data:
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
 
-![Home](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_home.jpg)
+![Home](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_home.jpg)
 
-![Register](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_register.jpg)
+![Register](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_register.jpg)
 
-![Log_in](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
+![Log_in](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
 
-![Profile](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+![Profile](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_profile.jpg)
 
-![Blog](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_blog.jpg)
+![Blog](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_blog.jpg)
 
-![Blog_article](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
+![Blog_article](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
 
-![Training_service_pruchase](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_training_service_purchase.jpg)
+![Training_service_pruchase](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_training_service_purchase.jpg)
 
-![Summit](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_summit.jpg)
+![Summit](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_summit.jpg)
 
-![Contact](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_contact.jpg)
+![Contact](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_contact.jpg)
 
-![About](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_about.jpg)
+![About](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_about.jpg)
 
-![Member_list](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
+![Member_list](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
 
-![Member_details](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
+![Member_details](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
 
-![Subjects](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_forum_subjects.jpg)
+![Subjects](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_forum_subjects.jpg)
 
-![Threads](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
+![Threads](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
 
-![Thread](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
+![Thread](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
 
-![New_threads](https://github.com/abmist/we_are_social_network/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
+![New_threads](https://github.com/abmist/fintopicsnet_network/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
 
 ## Main features
 * Member functionalities: log in, log out, member list, member detailed info, etc.
