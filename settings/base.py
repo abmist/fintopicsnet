@@ -24,13 +24,14 @@ INSTALLED_APPS = [
     'tinymce',
     'emoticons',
     'disqus',
-    'reusable_blog',
     'home',
     'accounts',
     'paypal_store',
     'products',
     'threads',
     'polls',
+    'contact',
+    'blog',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -101,3 +102,5 @@ STATICFILES_DIRS = (
 )
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js")
+
+

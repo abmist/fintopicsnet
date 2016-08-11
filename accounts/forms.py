@@ -71,25 +71,3 @@ class UserLoginForm(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput)
 
 
-#Just a test. I'll delete it.
-class UpdateProfileForm(forms.ModelForm):
-    user_profile_picture = forms.ImageField(label='Profile picture', required=False)
-    city = forms.CharField(label='City')
-
-    class Meta:
-        model = User
-        fields = ('user_profile_picture', 'city')
-
-    def clean_city(self):
-        city = self.cleaned_data.get('city')
-
-        return city
-
-    def save(self, commit=True):
-        user = super(UpdateProfileForm, self).save(commit=False)
-        user.email = self.cleaned_data['city']
-
-        if commit:
-            user.save()
-
-        return user

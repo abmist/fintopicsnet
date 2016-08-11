@@ -15,8 +15,6 @@ import arrow
 import json
 from django.http import Http404, HttpResponseRedirect
 
-from forms import UpdateProfileForm
-
 
 stripe.api_key = settings.STRIPE_SECRET
 

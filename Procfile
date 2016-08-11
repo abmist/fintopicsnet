@@ -1,2 +1,2 @@
-web: gunicorn we_are_social.wsgi:application --setting=settings.staging
+web: gunicorn fintopicsnet.wsgi:application --setting=settings.staging
 worker: python worker.py
