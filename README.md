@@ -145,12 +145,10 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 
 ## Improvements for the next stage
 
-This project is an exercise. It doesn't intend to be in a production stage. The goal was putting into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
+This project is an exercise. It doesn't intend to be in a production stage. The goal was to put into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
 * Message system between members.
 * Make possible to update members' information.
 * Make possible to sort/filter threads, members, etc.
-* 
-* 
 
 
 ## Instructions
