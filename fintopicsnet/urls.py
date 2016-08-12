@@ -4,7 +4,8 @@ from home import views
 from paypal.standard.ipn import urls as paypal_urls
 from paypal_store import views as paypal_views
 from products import views as product_views
-from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook, get_users, get_user_details
+from accounts.views import register, profile, login, logout, cancel_subscription, subscriptions_webhook, get_users, \
+    get_user_details
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
@@ -64,4 +65,6 @@ urlpatterns = [
     url(r'^blog/$', blog_views.post_list, name="post_list"),
     url(r'^blog/(?P<id>\d+)/$', blog_views.post_details, name="post_details"),
     url(r'^blog/post/$', blog_views.new_post, name='new_post'),
+
+
 ]
