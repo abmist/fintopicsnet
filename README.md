@@ -142,6 +142,17 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 * HTML5
 * CSS3
 
+
+## Improvements for the next stage
+
+This project is an exercise. It doesn't intend to be in a production stage. The goal was putting into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
+* Message system between members.
+* Make possible to update members' information.
+* Make possible to sort/filter threads, members, etc.
+* 
+* 
+
+
 ## Instructions
 
 Open your terminal and use the git clone command:
@@ -171,3 +182,11 @@ Run the project:
 `python manage.py runserver`
 
 Now you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
+
+Create a superuser:
+
+`python manage.py createsuperuser`
+
+Access to admin panel to create subject (forum):
+
+`http://127.0.0.1:8000/admin/`
