@@ -161,7 +161,9 @@ Once the project is cloned, enter in project_2 directory:
 
 `cd project_3`
 
-It's recommended to use a virtual environment (to keep isolated the dependencies required by this project). If you don't have it installed, you can do it using *pip* `pip install virtualenv`. 
+It's recommended to use a virtual environment (to keep isolated the dependencies required by this project). If you don't have it installed, you can do it using *pip*:
+
+`pip install virtualenv`
 
 Here you have the instructions: [Virtual Environment - The Hitchhiker's Guide to Python] (http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
