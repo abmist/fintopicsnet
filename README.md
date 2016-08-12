@@ -4,12 +4,13 @@
 This project is a **social entrepreneurship network** that allows for the exchange of business ideas –*an online meeting point for entrepreneurs and funders*-. It has been built with [Python] (https://www.python.org/) using [Django] (https://www.djangoproject.com/) and a relational database. 
 
 ## Description
-It was given to students a basic and plain skelenton of the project. The goal was using the key elements (learnt in the course) and creating those who would add value to get a full stack membership site with these components: 
+It was given to students a basic and plain skelenton of the project. The goal was using the elements learnt in the course (and any other which could add value) to get a full stack membership site with these components: 
 * An account app
 * A forum with a poll
 * A blog
 * A payment system
 * A contact form   
+
 
 It contains an **account management which deals with user registrations and authentication, and integrates two payment systems**: **Stripe** (for membership subscriptions) and **Paypal** (for training services acquisitions).
 
@@ -140,3 +141,33 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 * jQuery
 * HTML5
 * CSS3
+
+## Instructions
+
+Open your terminal and use the git clone command:
+
+`git clone https://github.com/abmist/Project_3.git`
+
+Once the project is cloned, enter in project_2 directory:
+
+`cd project_3`
+
+It's recommended to use a virtual environment (to keep isolated the dependencies required by this project). If you don't have it installed, you can do it using *pip* `pip install virtualenv`. 
+
+Here you have the instructions: [Virtual Environment - The Hitchhiker's Guide to Python] (http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
+Create a virtual environment for this project and activate it. 
+
+Install the dependencies:
+
+`pip install -r requirements.txt`
+
+Set the database: 
+
+`python manage.py migrate`
+
+Run the project:
+
+`python manage.py runserver`
+
+Now you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
