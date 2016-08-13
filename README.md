@@ -20,12 +20,6 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 * It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
 
-* If you want to test it, to register yourself use the following credit card data:
-  	* Credit card number: *4242424242424242*
-  	* CVV: *123*
-  	* Expiration month: *9*
-  	* Expiration year: *2033*
-
 *__Member list with a detailed view of each one__*
 * Only members can access to this **list of members** and to a **page with detailed information of each one**.
 * These details (like first name, last name, education, city, etc.) come from the register form. 
@@ -190,6 +184,12 @@ Create a superuser:
 
 `python manage.py createsuperuser`
 
-Access to admin panel to create subject (forum):
+Access to admin panel to create subjects for the forum:
 
 `http://127.0.0.1:8000/admin/`
+
+If you want to test the register, use the following credit card data:
+  	* Credit card number: *4242424242424242*
+  	* CVV: *123*
+  	* Expiration month: *9*
+  	* Expiration year: *2033*
