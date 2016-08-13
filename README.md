@@ -55,6 +55,8 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
 
+**Gif home**:
+
 ![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
 **Some screenshots**:
@@ -150,8 +152,8 @@ This project is an exercise. It doesn't intend to be in a production stage. The 
 * Display user name in the navbar.
 * Improve UI/UX.
 * Pagination.  
-* More "previous page" buttons.
 * Tooltips. 
+* Summary of threads, posts, articles, etc. of a member.
 
 
 ## Instructions
@@ -196,12 +198,24 @@ Access to admin panel to create subjects for the forum:
 
 If you want to test the register, use the following credit card data:
 
+* Credit card number: *4242424242424242*
+* CVV: *123*
+* Expiration month: *9*
+* Expiration year: *2033*
 
-  	* Credit card number: *4242424242424242*
+Note: In the event that you can't see the pages *Fintopics Summit* and *Terms and Conditions*, you'll need to configure the flat pages in the admin panel to run it locally:
 
-  	* CVV: *123*
-
-  	* Expiration month: *9*
-
-  	* Expiration year: *2033*
-
+* Go to *Sites* and add localhost as a site. 
+* You'll have to enter "localhost" in *Domain name* and *Display name*. Then click on *Save*.
+* Go to *Flat Pages*. 
+* Click on "Add". Entering the following for the page *Fintopics Summit*: 
+	* URL: */pages/summit/*
+	* Title: *Summit*
+	*Sites: *localhost*
+	*Advance options (show) > Template name: *flatpages/summit.html*
+* Click on "Add". Entering the following for the page *FTerms and Conditions*: 
+	* URL: */pages/terms/*
+	* Title: *Legal*
+	*Sites: *localhost*
+	*Advance options (show) > Template name: *flatpages/legal.html*
+* Go to fintopicsnet/settings.py and settings/base.py and change the SITE_ID. 
