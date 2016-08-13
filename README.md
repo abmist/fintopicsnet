@@ -106,7 +106,7 @@ About:
 
 Subjects (forum):
 
-![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_subjects.jpg)
+![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
 
 
 
