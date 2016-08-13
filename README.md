@@ -14,22 +14,22 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 ## Useful comments on the structure and some of the main components added
 
 *__Account model, register and authentication__*
-* This project includes a *custom user model*.
+* This project includes a **custom user model**.
 * The email acts as username. 
-* It contains *customs attributes* necessary to use Stripe (payment system) and there were also added other customs attributes for collect members' information. One of them is an optional **profile picture**.
+* It contains **customs attributes** necessary to use Stripe (payment system) and there were also added other customs attributes for collect members' information. One of them is an optional **profile picture**.
 * It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
 
-If you want to test it, to register yourself use the following credit card data:
-  * Credit card number: *4242424242424242*
-  * CVV: *123*
-  * Expiration month: *9*
-  * Expiration year: *2033*
+* If you want to test it, to register yourself use the following credit card data:
+  	* Credit card number: *4242424242424242*
+  	* CVV: *123*
+  	* Expiration month: *9*
+  	* Expiration year: *2033*
 
 *__Member list with a detailed view of each one__*
-* Only members can access to this *list of members* and to a *page with detailed information of each one*.
+* Only members can access to this **list of members** and to a **page with detailed information of each one**.
 * These details (like first name, last name, education, city, etc.) come from the register form. 
-* The page with those details of each member is *linked to every post and  blog-article they write and to every forum-thread they create*.  
+* The page with those details of each member is **linked to every post and blog-article they write and to every forum-thread they create**.  
 
 *__Forum with polls__*
 * Members can engage in discussion about different types of business topics within the membership community.
@@ -41,7 +41,7 @@ If you want to test it, to register yourself use the following credit card data:
 
 *__About__*
 * It explains useful information about the site and the company.
-* It also includes *Google maps with markers* for showing where offices are located. 
+* It also includes **Google maps with markers** for showing where offices are located. 
 
 *__Contact__*
 * A **form** that allows any member and/or potential member **to ask any kind of question to the staff**. 
@@ -57,9 +57,6 @@ If you want to test it, to register yourself use the following credit card data:
 * It also includes a link to another page (flatpage) which contains details about a summit (another project named Fintopics).  
 
 
-*__Other features__*
-* Flatpages, videos, glyphicons, parallax effect
-
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
@@ -70,70 +67,65 @@ Home:
 
 ![Home](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_home_2.jpg)
 
----
 
 Login:
 
 ![Log_in](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
----
+
 
 Profile:
 
 ![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
----
-
-
-Blog:
-
-![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
----
-
-
-Blog article:
-
-![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
----
-
-About:
-
-![About](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_about.jpg)
----
-
 
 Member list:
 
 ![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
----
+
 
 
 Member detail info:
 
 ![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
----
+
+Blog:
+
+![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
+
+
+
+Blog article:
+
+![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
+
+
+About:
+
+![About](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_about.jpg)
+
 
 
 Subjects (forum):
 
 ![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_subjects.jpg)
----
+
 
 
 Threads (forum/subject):
 
 ![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
----
+
 
 
 Thread (forum/subject/thread):
 
 ![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
----
+
 
 
 Posts (forum/subject/thread):
 
 ![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
----
+
 
 
 New thread (forum/subject/thread):
