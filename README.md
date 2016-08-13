@@ -220,4 +220,4 @@ If you want to test the register, use the following credit card data:
 	* Sites: *localhost*
 	* Advance options (show) > Template name: *flatpages/legal.html*
 	* Then click on *Save*.
-* Go to *fintopicsnet/settings.py* and *settings/base.py* and change the ´SITE_ID´. 
+* Go to *fintopicsnet/settings.py* and *settings/base.py* and change the `SITE_ID`. 
