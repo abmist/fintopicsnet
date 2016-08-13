@@ -103,3 +103,7 @@ STATICFILES_DIRS = (
 )
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js")
+
+
+#DISQUS_API_KEY = 'ZruTajAt8E3Ao1F2fzL2Dx9VUra9u0XABGKdSLXtAIHN3gL0qoUwJYywaqMEKkB8'
+DISQUS_WEBSITE_SHORTNAME = 'was_blog'
