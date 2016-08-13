@@ -22,7 +22,7 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 
 *__Member list with a detailed view of each one__*
 * Only members can access to this **list of members** and to a **page with detailed information of each one**.
-* These details (like first name, last name, education, city, etc.) come from the register form. 
+* These details (like first name, last name, education, city, etc.) come from the **register form**. 
 * The page with those details of each member is **linked to every post and blog-article they write and to every forum-thread they create**.  
 
 *__Forum with polls__*
@@ -48,7 +48,7 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 
 *__Training services list__* 
 * There is a list of training services (workshops, etc.) where **users can purchase them by means of PayPal payment system**. 
-* It also includes a link to another page (flatpage) which contains details about a summit (another project named Fintopics).  
+* It also includes a link to another page (flatpage) which contains details about a summit (another project named [Fintopics] (https://github.com/abmist/Project_1)).  
 
 
 ## Style
