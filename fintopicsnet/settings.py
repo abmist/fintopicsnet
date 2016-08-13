@@ -148,6 +148,8 @@ PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 
 DISQUS_WEBSITE_SHORTNAME = 'was_blog'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Setting for sending emails: Contact form.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
