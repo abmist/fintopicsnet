@@ -54,14 +54,14 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
-**Some screenshots**:
 
+![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
+
+**Some screenshots**:
 
 Home:
 
 ![Home](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_home.jpg)
-
-![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
 Login:
 
@@ -143,10 +143,15 @@ New thread (forum/subject/thread):
 
 ## Improvements for the next stage
 
-This project is an exercise. It doesn't intend to be in a production stage. The goal was to put into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
+This project is an exercise. It doesn't intend to be in a production stage. The goal was just to put into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
 * Message system between members.
 * Make possible to update members' information.
 * Make possible to sort/filter threads, members, etc.
+* Display user name in the navbar.
+* Improve UI/UX.
+* Pagination.  
+* More "previous page" buttons.
+* Tooltips. 
 
 
 ## Instructions
@@ -190,7 +195,13 @@ Access to admin panel to create subjects for the forum:
 `http://127.0.0.1:8000/admin/`
 
 If you want to test the register, use the following credit card data:
+
+
   	* Credit card number: *4242424242424242*
+
   	* CVV: *123*
+
   	* Expiration month: *9*
+
   	* Expiration year: *2033*
+
