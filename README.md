@@ -11,34 +11,13 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 * A payment system
 * A contact form   
 
-## Main features
-* Member functionalities: log in, log out, member list, member detailed info, etc.
-* User registration
-* Custom user 
-* Email authentication
-* Stripe payment system for subscriptions
-* Paypal payment system for single purchases
-* Forum 
-* Poll
-* Forms: registration, contact, posts, etc.
-* Blog
-* Disqus for blog comments
-* Google maps
-* Contact
-* Flatpages
-
-
-It contains an **account management which deals with user registrations and authentication, and integrates two payment systems**: **Stripe** (for membership subscriptions) and **Paypal** (for training services acquisitions).
-
-
-
 ## Useful comments on the structure and some of the main components added
 
 *__Account model, register and authentication__*
-* This project includes a custom user model.
+* This project includes a *custom user model*.
 * The email acts as username. 
-* It contains customs attributes necessary to use Stripe (payment system) and there were also added other customs attributes for collect members' information. One of them is an optional **profile picture**.
-
+* It contains *customs attributes* necessary to use Stripe (payment system) and there were also added other customs attributes for collect members' information. One of them is an optional **profile picture**.
+* It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
 
 If you want to test it, to register yourself use the following credit card data:
@@ -48,11 +27,11 @@ If you want to test it, to register yourself use the following credit card data:
   * Expiration year: *2033*
 
 *__Member list with a detailed view of each one__*
-* Only members can access to this list of members and to a page with detailed information of each one.
+* Only members can access to this *list of members* and to a *page with detailed information of each one*.
 * These details (like first name, last name, education, city, etc.) come from the register form. 
-* The page with those details of each member is linked to every post and  blog-article they write and to every forum-thread they create.  
+* The page with those details of each member is *linked to every post and  blog-article they write and to every forum-thread they create*.  
 
-**Forum with polls**
+*__Forum with polls__*
 * Members can engage in discussion about different types of business topics within the membership community.
 * There are several **subjects** (like finance, marketing, strategy, etc.). Only a superuser can create them. Non-members can see them but they can’t access to their content.
 * Any member can create a **thread** in a subject.  
@@ -60,23 +39,26 @@ If you want to test it, to register yourself use the following credit card data:
 * The poll is created by the owner of the thread. And it will only record a vote per member.
 * Threads and posts show their author. It's possible to access to their detailed information clicking on the link. 
 
-**About**
+*__About__*
 * It explains useful information about the site and the company.
-* It also includes Google maps with markers for showing where offices are located. 
+* It also includes *Google maps with markers* for showing where offices are located. 
 
-**Contact**
+*__Contact__*
 * A **form** that allows any member and/or potential member **to ask any kind of question to the staff**. 
 
-**Blog**
+*__Blog__*
 * This blog enables members to **share articles** where they can explain business ideas, experiences, etc.
 * Any member can create an article and add a topic picture.
 * Other members can contribute commenting those articles using Disqus system.
 * Articles show their **author with a link to access to their detailed information**.
 
-**Training services list** 
-* There is a list of training services (workshops, etc.) where **users can purchase them by means of PayPal**. 
+*__Training services list__* 
+* There is a list of training services (workshops, etc.) where **users can purchase them by means of PayPal payment system**. 
 * It also includes a link to another page (flatpage) which contains details about a summit (another project named Fintopics).  
 
+
+*__Other features__*
+* Flatpages, videos, glyphicons, parallax effect
 
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
@@ -86,54 +68,79 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 
 Home:
 
-![Home](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_home.jpg)
+![Home](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_home_2.jpg)
 
-![Register](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_register.jpg)
+---
+
+Login:
 
 ![Log_in](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
+---
+
+Profile:
 
 ![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+---
 
 
 Blog:
 
 ![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
+---
+
 
 Blog article:
 
 ![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
+---
 
-![Training_service_pruchase](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_training_service_purchase.jpg)
-
-![Summit](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_summit.jpg)
-
-![Contact](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_contact.jpg)
+About:
 
 ![About](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_about.jpg)
+---
+
 
 Member list:
 
 ![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
+---
+
 
 Member detail info:
 
 ![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
+---
+
 
 Subjects (forum):
 
 ![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_subjects.jpg)
+---
+
 
 Threads (forum/subject):
 
 ![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
+---
+
 
 Thread (forum/subject/thread):
 
 ![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
+---
+
+
+Posts (forum/subject/thread):
+
+![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
+---
+
 
 New thread (forum/subject/thread):
 
 ![New_threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
+
+
 
 ## Technology stack
 * Relational database: MySQL/SQLite
