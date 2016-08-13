@@ -16,7 +16,7 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 *__Account model, register and authentication__*
 * This project includes a **custom user model**.
 * The email acts as username. 
-* It contains **customs attributes** necessary to use Stripe (payment system) and there were also added other customs attributes for collect members' information. One of them is an optional **profile picture**.
+* It contains **custom attributes** necessary to use Stripe (payment system) and there were also added other custom attributes to collect members' information. One of them is an optional **profile picture**.
 * It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
 
