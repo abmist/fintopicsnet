@@ -57,6 +57,7 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 
 ![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
+![All_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_in_motion.gif)
 **Some screenshots**:
 
 Home:
