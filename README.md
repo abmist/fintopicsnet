@@ -203,7 +203,7 @@ If you want to test the register, use the following credit card data:
 * Expiration month: *9*
 * Expiration year: *2033*
 
-Note: In the event that you can't see the pages *Fintopics Summit* and *Terms and Conditions*, you'll need to configure the flat pages in the admin panel to run it locally:
+*Note*: In the event that you can't see the pages *Fintopics Summit* and *Terms and Conditions*, you'll need to configure the flat pages in the admin panel to run it locally:
 
 * Go to *Sites* and add localhost as a site. 
 * You'll have to enter "localhost" in *Domain name* and *Display name*. Then click on *Save*.
@@ -211,11 +211,13 @@ Note: In the event that you can't see the pages *Fintopics Summit* and *Terms an
 * Click on "Add". Entering the following for the page *Fintopics Summit*: 
 	* URL: */pages/summit/*
 	* Title: *Summit*
-	*Sites: *localhost*
-	*Advance options (show) > Template name: *flatpages/summit.html*
-* Click on "Add". Entering the following for the page *FTerms and Conditions*: 
+	* Sites: *localhost*
+	* Advance options (show) > Template name: *flatpages/summit.html*
+	* Then click on *Save*.
+* Click on "Add". Entering the following for the page *Terms and Conditions*: 
 	* URL: */pages/terms/*
 	* Title: *Legal*
-	*Sites: *localhost*
-	*Advance options (show) > Template name: *flatpages/legal.html*
-* Go to fintopicsnet/settings.py and settings/base.py and change the SITE_ID. 
+	* Sites: *localhost*
+	* Advance options (show) > Template name: *flatpages/legal.html*
+	* Then click on *Save*.
+* Go to *fintopicsnet/settings.py* and *settings/base.py* and change the ´SITE_ID´. 
