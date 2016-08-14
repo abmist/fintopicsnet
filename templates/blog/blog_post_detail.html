@@ -24,7 +24,11 @@
                         <img src="/{{ post.image }}" height="100%" width="100%">
                     {% endif %}
                     <hr>
-                    <p>{{ post.content }}</p>
+                    <p>
+                        {% autoescape off %}
+                            {{ post.content|emoticons }}
+                        {% endautoescape %}
+                    </p>
                     <br>
                     <button class="btn btn-md btn-default standard-style-button" onclick="location.href='/blog'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Back to blog</button>
                     <hr>
