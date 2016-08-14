@@ -5,8 +5,10 @@
 {% load emoticons_tags %}
 <div class="basic-box blog-background">
    <div class="row">
-        <div id ="internal-frame-left-intro" class="col-md-3">
+        <div class="col-md-3">
+        <div id ="internal-frame-left-intro"></div>
             <h2 class="thirdColour">{{ post.title }}</h2>
+        </div>
             <br>
             <hr>
             <a class=" post-author-fullname" href="{% url 'member_detail' post.author.id %}">
@@ -22,8 +24,8 @@
 
                     </div>
                 </div>
-            <p><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></p><br>
-            <p>{{ post.published_date }}     &nbsp;|&nbsp;    </p>
+            <p><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></p>
+            <p>{{ post.published_date }}   </p>
             </a>
             <br>
         </div>
