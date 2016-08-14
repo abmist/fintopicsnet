@@ -115,7 +115,9 @@ Run the project:
 
 Once the project is running, you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
 
-Now you have to create a superuser:
+*__To use the social network, follow the steps below:__*
+
+Now you have to **create a superuser**:
 
 `python manage.py createsuperuser`
 
@@ -123,18 +125,11 @@ Access to admin panel:
 
 `http://127.0.0.1:8000/admin/`
 
-Go to Accounts/Users, select your the new user that you have created and add the rest of the details (*first name*, *last name*, *education*, *profile picture*...). 
+Go to Accounts/Users, select your the new user that you have created and **add the rest of the details** (*first name*, *last name*, *education*, *profile picture*...).
 
-Go to Threads/Subjects so as to create subjects for the forum.
+Go to Threads/Subjects so as to **create subjects for the forum**.
 
-If you want to test the register, use the following credit card data:
-
-* Credit card number: *4242424242424242*
-* CVV: *123*
-* Expiration month: *9*
-* Expiration year: *2033*
-
-*Note*: In the event that you can't see the pages *Fintopics Summit* and *Terms and Conditions*, you'll need to configure the flat pages in the admin panel to run it locally:
+**Note**: In the event that you can't see the pages *Fintopics Summit* and *Terms and Conditions*, you'll need to configure the flat pages in the admin panel to run it locally:
 
 * Go to *Sites* and add localhost as a site. 
 * You'll have to enter "localhost" in *Domain name* and *Display name*. Then click on *Save*.
@@ -154,6 +149,12 @@ If you want to test the register, use the following credit card data:
 * Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. 
 	* For example, if you see `http://127.0.0.1:8000/admin/sites/site/3/`, the `SITE_ID` is *3*. 
 
+If you want to **test the register**, use the following credit card data:
+
+* Credit card number: *4242424242424242*
+* CVV: *123*
+* Expiration month: *9*
+* Expiration year: *2033*
 
 ## Visit the site
 
