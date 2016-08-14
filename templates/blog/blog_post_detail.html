@@ -16,15 +16,17 @@
             </a>
         </div><!-- End profile picture and link to author info -->
         <div class="col-md-3">
+            <hr>
             <h2 class="thirdColour">{{ post.title }}</h2>
             <br>
             <hr>
             <div class="row">
+                <div class="col-sm-12">{{ post.published_date }}</div>
                 <div class="col-sm-4"><b>VIEWS</b></div>
                 <div class="col-sm-8">{{ post.views }}</div>
                 <div class="col-sm-4"><b>TAGS</b></div>
                 <div class="col-sm-8">{{ post.tag }}</div>
-                <p>{{ post.published_date }}<br>
+                <br>
             </div>
 
 
