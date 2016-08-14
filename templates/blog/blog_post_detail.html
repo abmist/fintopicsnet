@@ -17,14 +17,21 @@
         </div><!-- End profile picture and link to author info -->
         <div class="col-md-3">
             <h2 class="thirdColour">{{ post.title }}</h2>
-            <hr>
-             <p>{{ post.published_date }}<br>   <strong>VIEWS</strong>&nbsp; {{ post.views }} <br>    <strong>TAGS</strong>&nbsp; {{ post.tag }}</p>
             <br>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
+            <hr>
             <div class="row">
-                <div class="col-sm-11">
+                <div class="col-sm-5"><b>VIEWS</b></div>
+                <div class="col-sm-7">{{ post.views }}</div>
+                <div class="col-sm-5"><b>TAGS</b></div>
+                <div class="col-sm-7">{{ post.tag }}</div>
+            </div>
+            <hr>
+             <p>{{ post.published_date }}<br>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
                     {% if post.image %}
                         <img src="/{{ post.image }}" height="100%" width="100%">
                     {% endif %}
