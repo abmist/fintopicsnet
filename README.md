@@ -87,11 +87,11 @@ This project is an exercise. The goal was just to put into practice some of the 
 
 Open your terminal and use the git clone command:
 
-`git clone https://github.com/abmist/project_3.git`
+`git clone https://github.com/abmist/fintopicsnet.git`
 
-Once the project is cloned, enter in project_3 directory:
+Once the project is cloned, enter in fintopicsnet directory:
 
-`cd project_3`
+`cd fintopicsnet`
 
 It's recommended to use a virtual environment (to keep isolated the dependencies required by this project). If you don't have it installed, you can do it using *pip*:
 
