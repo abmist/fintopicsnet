@@ -146,6 +146,7 @@ SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 
+DISQUS_API_KEY = 'HO1zSmCiYozodaNG23c7uAPuxU2gyWKvJq00DdXdLbOFgliTCxfzDRXQpQ9hCSU1'
 DISQUS_WEBSITE_SHORTNAME = 'fintopicsnet.herokuapp.com'
 
 
