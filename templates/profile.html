@@ -8,14 +8,14 @@
         <div id="profile-info" class="col-sm-4">
             <!-- Part 1: Profile image and full name -->
             <div class="row">
-                <div class="col-sm-3">              
+                <div class="col-lg-3">
                     {% if not user.user_profile_picture %}
                       <img src="http://placehold.it/100" style="width:50px; height: 50px; ;" class="img-circle">
                     {% else %}
                         <img src="/{{ user.user_profile_picture }}" height="70px" width="70px">
                     {% endif %}
                 </div>
-                <div class="col-sm-9 full-name-profile">
+                <div class="col-lg-9 full-name-profile">
                     <p><b>{{ user.first_name }} {{ user.last_name }}</b></p>
                 </div>
             </div>
