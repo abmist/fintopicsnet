@@ -43,7 +43,9 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-
+                    {% load disqus_tags %}
+                    {% set_disqus_title post.title %}
+                    {% disqus_show_comments %}
                 </div>
             </div>
         </article>
