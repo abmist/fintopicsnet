@@ -8,28 +8,22 @@
         <div class="col-md-3">
             <h2 class="thirdColour">{{ post.title }}</h2>
             <br>
+            <hr>
             <a class=" post-author-fullname" href="{% url 'member_detail' post.author.id %}">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                          {% if post.author.user_profile_picture %}
                             <img src="/{{ post.author.user_profile_picture}}" height="50px" width="50px">
                          {% else %}
                             <img src="http://placehold.it/100" style="width:50px; height: 50px;" class="img-circle">
                          {% endif %}
                     </div>
-                    <div class="col-lg-8 full-name-profile">
+                    <div class="col-lg-9 full-name-profile">
                         <p><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></p>
                     </div>
                 </div>
             </a>
-        <hr>
-            <div class="row">
-                <div class="col-sm-3"><b>VIEWS</b></div>
-                <div class="col-sm-9">{{ post.views }}</div>
-                <div class="col-sm-3"><b>TAGS</b></div>
-                <div class="col-sm-9">{{ post.tag }}</div>
-                <br>
-            </div>
+            <br>
         </div>
 
         <div class="col-md-9">
@@ -46,7 +40,7 @@
                         {% endautoescape %}
                     </p>
                     <br>
-                    <p>{{ post.published_date }}</p>
+                     <p>{{ post.published_date }}     &nbsp;|&nbsp;    <strong>WIEWS</strong>&nbsp; {{ post.views }} &nbsp; |&nbsp;    <strong>TAGS</strong>&nbsp; {{ post.tag }}</p>
                     <br>
                     <button class="btn btn-md btn-default standard-style-button" onclick="location.href='/blog'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Back to blog</button>
                     <br>
