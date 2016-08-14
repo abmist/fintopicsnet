@@ -168,7 +168,7 @@ Home (gif):
 
 ![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
-Profile:
+Profile (*Note: The member showed on the screenshot is a superuser. If he was a normal user, a longer stripe id would appears and the subscription period wouldn't be 0 minutes.*)
 
 ![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
 
