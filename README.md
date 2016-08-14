@@ -166,7 +166,7 @@ Run the project:
 
 `python manage.py runserver`
 
-Once the project is runnig, you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
+Once the project is running, you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
 
 Now you have to create a superuser:
 
