@@ -5,17 +5,18 @@ This project is a **social entrepreneurship network** that allows for the exchan
 
 ## Description
 It was given to students a basic and plain skelenton of the project. The goal was using the elements learnt in the course (and any other which could add value) to get a full stack membership site with these components: 
-* An account app
+* Account management: sing up, log in, authentication, etc.
 * A forum with a poll
-* A blog
-* A payment system
+* A blog which enables comments (Disqus)
+* A payment system for subscriptions
 * A contact form   
+* 
 
 ## Useful comments on the structure and some of the main components added
 
 *__Account model, register and authentication__*
 * This project includes a **custom user model**.
-* The email acts as username. 
+* The email acts as username -with email authentication. 
 * It contains **custom attributes** necessary to use Stripe (payment system) and there were also added other custom attributes to collect members' information. One of them is an optional **profile picture**.
 * It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
@@ -30,8 +31,8 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 * There are several **subjects** (like finance, marketing, strategy, etc.). Only a superuser can create them. Non-members can see them but they can’t access to their content.
 * Any member can create a **thread** in a subject.  
 * Each thread, in turns, **contains a poll and posts**. Again, only members can *create, edit and delete* a post, and vote on the poll.
-* The poll is created by the owner of the thread. And it will only record a vote per member.
-* Threads and posts show their author. It's possible to access to their detailed information clicking on the link. 
+* The poll is created by the owner of the thread. *And it will only record a vote per member*.
+* Threads and posts show their author. It's possible to access to authors' detailed information clicking on the link/avatar. 
 
 *__About__*
 * It explains useful information about the site and the company.
@@ -43,92 +44,71 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 *__Blog__*
 * This blog enables members to **share articles** where they can explain business ideas, experiences, etc.
 * Any member can create an article and add a topic picture.
-* Other members can contribute commenting those articles using Disqus system.
+* Other members can contribute commenting those articles using **Disqus** system. 
+	* *Note*: If you see: “We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.” This is normal and is nothing to be concerned about. Disqus commenting only works when the website URL and shortname match. So once the website is published online, you should find commenting works.
 * Articles show their **author with a link to access to their detailed information**.
 
 *__Training services list__* 
 * There is a list of training services (workshops, etc.) where **users can purchase them by means of PayPal payment system**. 
-* It also includes a link to another page (flatpage) which contains details about a summit (another project named [Fintopics] (https://github.com/abmist/Project_1)).  
+* It also includes a link to another page (using **flat page**) which contains details about a summit (another project named [Fintopics] (https://github.com/abmist/Project_1)).  
 
 
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
 
 
-**Gif home**:
-
-![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
-
 **Some screenshots**:
 
-Home:
+**Gif home**:
 
-![Home](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_home.jpg)
-
-Login:
-
-![Log_in](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_log_in.jpg)
-
+![Home_in_motion](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
 Profile:
 
-![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+![Profile](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_profile.jpg)
 
 Member list:
 
-![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
-
+![Member_list](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
 
 
 Member detail info:
 
-![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
+![Member_details](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
 
 Blog:
 
-![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
-
+![Blog](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_blog.jpg)
 
 
 Blog article:
 
-![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
-
-
-About:
-
-![About](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_about.jpg)
-
+![Blog_article](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
 
 
 Subjects (forum):
 
-![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
-
+![Subjects](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
 
 
 Threads (forum/subject):
 
-![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
-
+![Threads](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
 
 
 Thread (forum/subject/thread):
 
-![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
-
+![Thread](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
 
 
 Posts (forum/subject/thread):
 
-![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
-
+![Posts](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_posts.jpg)
 
 
 New thread (forum/subject/thread):
 
-![New_threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
-
+![New_threads](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
 
 
 ## Technology stack
@@ -145,9 +125,9 @@ New thread (forum/subject/thread):
 
 ## Improvements for the next stage
 
-This project is an exercise. It doesn't intend to be in a production stage. The goal was just to put into practice some of the concepts learnt in the course. If you were interested in continuing it, below you can find some improvements that could be added: 
+This project is an exercise. The goal was just to put into practice some of the concepts learnt in the course. Below you can find some improvements that could be added: 
 * Message system between members.
-* Make possible to update members' information.
+* Make possible to members to update their own information.
 * Make possible to sort/filter threads, members, etc.
 * Display user name in the navbar.
 * Improve UI/UX.
@@ -186,15 +166,19 @@ Run the project:
 
 `python manage.py runserver`
 
-Now you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
+Once the project is runnig, you can open up your browser and in the URL bar enter `http://127.0.0.1:8000`
 
-Create a superuser:
+Now you have to create a superuser:
 
 `python manage.py createsuperuser`
 
-Access to admin panel to create subjects for the forum:
+Access to admin panel:
 
 `http://127.0.0.1:8000/admin/`
+
+Go to Accounts/Users, select your new user that you have created and add the rest of the details (*first name*, *last name*, *profile picture*...). 
+
+Go to Threads/Subjects so as to create subjects for the forum.
 
 If you want to test the register, use the following credit card data:
 
@@ -220,4 +204,11 @@ If you want to test the register, use the following credit card data:
 	* Sites: *localhost*
 	* Advance options (show) > Template name: *flatpages/legal.html*
 	* Then click on *Save*.
-* Go to *fintopicsnet/settings.py* and *settings/base.py* and change the `SITE_ID`. 
+* Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. For example, in that case the `SITE_ID` that appears *3*: `http://127.0.0.1:8000/admin/sites/site/3/`   
+
+
+## Visit the site
+
+Deployed thanks to Heroku.
+
+[Fintopicsnet](http://fintopicsnet.herokuapp.com/) 
