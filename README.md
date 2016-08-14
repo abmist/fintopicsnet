@@ -204,7 +204,8 @@ If you want to test the register, use the following credit card data:
 	* Sites: *localhost*
 	* Advance options (show) > Template name: *flatpages/legal.html*
 	* Then click on *Save*.
-* Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. For example, if you see `http://127.0.0.1:8000/admin/sites/site/3/`, the `SITE_ID` is *3*.   
+* Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. 
+	* For example, if you see `http://127.0.0.1:8000/admin/sites/site/3/`, the `SITE_ID` is *3*. 
 
 
 ## Visit the site
