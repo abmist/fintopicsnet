@@ -61,54 +61,54 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 
 **Gif home**:
 
-![Home_in_motion](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
+![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
 
 Profile:
 
-![Profile](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
 
 Member list:
 
-![Member_list](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
+![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
 
 
 Member detail info:
 
-![Member_details](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
+![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
 
 Blog:
 
-![Blog](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_blog.jpg)
+![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
 
 
 Blog article:
 
-![Blog_article](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
+![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
 
 
 Subjects (forum):
 
-![Subjects](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
+![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
 
 
 Threads (forum/subject):
 
-![Threads](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
+![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
 
 
 Thread (forum/subject/thread):
 
-![Thread](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
+![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
 
 
 Posts (forum/subject/thread):
 
-![Posts](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_posts.jpg)
+![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
 
 
 New thread (forum/subject/thread):
 
-![New_threads](https://github.com/abmist/project_3/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
+![New_threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
 
 
 ## Technology stack
@@ -140,11 +140,11 @@ This project is an exercise. The goal was just to put into practice some of the 
 
 Open your terminal and use the git clone command:
 
-`git clone https://github.com/abmist/fintopicsnet.git`
+`git clone https://github.com/abmist/project_3.git`
 
-Once the project is cloned, enter in fintopicsnet directory:
+Once the project is cloned, enter in project_3 directory:
 
-`cd fintopicsnet`
+`cd project_3`
 
 It's recommended to use a virtual environment (to keep isolated the dependencies required by this project). If you don't have it installed, you can do it using *pip*:
 
@@ -176,7 +176,7 @@ Access to admin panel:
 
 `http://127.0.0.1:8000/admin/`
 
-Go to Accounts/Users, select your new user that you have created and add the rest of the details (*first name*, *last name*, *profile picture*...). 
+Go to Accounts/Users, select your the new user that you have created and add the rest of the details (*first name*, *last name*, * education*, *profile picture*...). 
 
 Go to Threads/Subjects so as to create subjects for the forum.
 
@@ -204,11 +204,11 @@ If you want to test the register, use the following credit card data:
 	* Sites: *localhost*
 	* Advance options (show) > Template name: *flatpages/legal.html*
 	* Then click on *Save*.
-* Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. For example, in that case the `SITE_ID` that appears *3*: `http://127.0.0.1:8000/admin/sites/site/3/`   
+* Make sure that the `SITE_ID` (an integer) used in *fintopicsnet/settings.py* and *settings/base.py* is the same as the one that appears in the browser toolbar when you added *localhost* as a site. For example, in that case the `SITE_ID` that appears is *3*: `http://127.0.0.1:8000/admin/sites/site/3/`   
 
 
 ## Visit the site
 
 Deployed thanks to Heroku.
 
-[Fintopicsnet](http://fintopicsnet.herokuapp.com/) 
+[Fintopicsnet](http://fintopicsnet.herokuapp.com/)
