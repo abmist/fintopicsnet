@@ -22,10 +22,3 @@ SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = 'http://fintopicsnet.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'test_cib@aaaa.com'
 
-# Setting for sending emails: Contact form.
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
