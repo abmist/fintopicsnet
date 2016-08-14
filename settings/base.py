@@ -106,5 +106,5 @@ TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min
 
 
 DISQUS_API_KEY = 'HO1zSmCiYozodaNG23c7uAPuxU2gyWKvJq00DdXdLbOFgliTCxfzDRXQpQ9hCSU1'
-DISQUS_WEBSITE_SHORTNAME = 'fintopicsnet'
+DISQUS_WEBSITE_SHORTNAME = 'fintopicsnet.herokuapp.com'
 
