@@ -176,7 +176,7 @@ Access to admin panel:
 
 `http://127.0.0.1:8000/admin/`
 
-Go to Accounts/Users, select your the new user that you have created and add the rest of the details (*first name*, *last name*, * education*, *profile picture*...). 
+Go to Accounts/Users, select your the new user that you have created and add the rest of the details (*first name*, *last name*, *education*, *profile picture*...). 
 
 Go to Threads/Subjects so as to create subjects for the forum.
 
