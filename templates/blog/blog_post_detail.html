@@ -19,9 +19,11 @@
                          {% endif %}
                     </div>
                     <div id="full-name-blog-article" class="col-lg-9">
-                        <p><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></p>
+
                     </div>
                 </div>
+            <p><b>{{ post.author.first_name }} {{ post.author.last_name }}</b></p><br>
+            <p>{{ post.published_date }}     &nbsp;|&nbsp;    </p>
             </a>
             <br>
         </div>
@@ -40,7 +42,7 @@
                         {% endautoescape %}
                     </p>
                     <br>
-                     <p>{{ post.published_date }}     &nbsp;|&nbsp;    <strong>VIEWS</strong>&nbsp; {{ post.views }} &nbsp; |&nbsp;    <strong>TAGS</strong>&nbsp; {{ post.tag }}</p>
+                     <p><strong>VIEWS</strong>&nbsp; {{ post.views }} &nbsp; |&nbsp;    <strong>TAGS</strong>&nbsp; {{ post.tag }}</p>
                     <br>
                     <button class="btn btn-md btn-default standard-style-button" onclick="location.href='/blog'"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp; Back to blog</button>
                     <br>
