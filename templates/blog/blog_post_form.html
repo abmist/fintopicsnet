@@ -1,6 +1,17 @@
 {% extends "base.html" %}
-{% block content %}
 {% load bootstrap_tags %}
+{% load staticfiles %}
+{% block head_js %}
+    <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
+    <script>
+        tinyMCE.init({
+            mode: "textareas",
+            theme: "modern",
+            plugins: "paste"
+        });
+    </script>
+{% endblock %}
+{% block content %}
     <div class="row basic-box dotted-background">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">		
