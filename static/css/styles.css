@@ -474,6 +474,10 @@ CSS STRUCTURE
 	    background: linear-gradient(to right, white, #f9f9f9) /* Standard syntax (must be last) */
 	}
 
+	#full-name-blog-article {
+		padding: 5% 0% 3% 3%
+	}
+
 	/* FORUM, SUBJECTS, THREADS (specific rules) ---------------------------------- */
 
 	.thread-list-item {
