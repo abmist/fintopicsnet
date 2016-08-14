@@ -6,11 +6,12 @@ This project is a **social entrepreneurship network** that allows for the exchan
 ## Description
 It was given to students a basic and plain skelenton of the project. The goal was using the elements learnt in the course (and any other which could add value) to get a full stack membership site with these components: 
 * Account management: sing up, log in, authentication, etc.
-* A forum with a poll
-* A blog which enables comments (Disqus)
+* A forum app 
+* A polls app
+* A blog app with Disqus system
 * A payment system for subscriptions
-* A contact form   
-* 
+* A contact form  
+* An about section with maps 
 
 ## Useful comments on the structure and some of the main components added
 
@@ -21,10 +22,10 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 * It is used **Stripe** payment system (for membership subscriptions). 
 *Once registered and/or logged in*, the user accesses to the profile page which shows his/her basic account information and subscription details. You need to be registered and logged in to see most of the content.
 
-*__Member list with a detailed view of each one__*
-* Only members can access to this **list of members** and to a **page with detailed information of each one**.
-* These details (like first name, last name, education, city, etc.) come from the **register form**. 
-* The page with those details of each member is **linked to every post and blog-article they write and to every forum-thread they create**.  
+*__Member list and an individual page for display the detailed information of each member__*
+* Only members can access to the **list of members** and to each **individual page with detailed data**.
+* Those details (first name, last name, education, city, etc.) come from the **register form**. 
+* The individual page with those details is **linked to every post and blog-article they write and to every forum-thread they create**.  
 
 *__Forum with polls__*
 * Members can engage in discussion about different types of business topics within the membership community.
@@ -55,60 +56,6 @@ It was given to students a basic and plain skelenton of the project. The goal wa
 
 ## Style
 The aim was to create a **totally responsive website which keeps a minimal and functional design** focused on information. For that purpose it has been used a clean, sober and subtle style - with very few decorative elements-, keeping simplicity at all times. 
-
-
-**Some screenshots**:
-
-Home (gif):
-
-![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
-
-Profile:
-
-![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
-
-Member list:
-
-![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
-
-
-Member detail info:
-
-![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
-
-Blog:
-
-![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
-
-
-Blog article:
-
-![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
-
-
-Subjects (forum):
-
-![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
-
-
-Threads (forum/subject):
-
-![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
-
-
-Thread (forum/subject/thread):
-
-![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
-
-
-Posts (forum/subject/thread):
-
-![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
-
-
-New thread (forum/subject/thread):
-
-![New_threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
 
 
 ## Technology stack
@@ -213,3 +160,56 @@ If you want to test the register, use the following credit card data:
 Deployed thanks to Heroku.
 
 [Fintopicsnet](http://fintopicsnet.herokuapp.com/)
+
+In the event that Heroku couldn't display the website, below there are some screenshots:
+
+Home (gif):
+
+![Home_in_motion](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/fintopicsnet_home_in_motion.gif)
+
+Profile:
+
+![Profile](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_profile.jpg)
+
+Member list:
+
+![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
+
+
+Member detail info:
+
+![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
+
+Blog:
+
+![Blog](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog.jpg)
+
+
+Blog article:
+
+![Blog_article](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_blog_article.jpg)
+
+
+Subjects (forum):
+
+![Subjects](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_subjects.jpg)
+
+
+Threads (forum/subject):
+
+![Threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_threads.jpg)
+
+
+Thread (forum/subject/thread):
+
+![Thread](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_thread_and_posts.jpg)
+
+
+Posts (forum/subject/thread):
+
+![Posts](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_posts.jpg)
+
+
+New thread (forum/subject/thread):
+
+![New_threads](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_forum_new_thread.jpg)
