@@ -177,7 +177,7 @@ Member list:
 ![Member_list](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_list.jpg)
 
 
-Member detail info:
+Member detailed info:
 
 ![Member_details](https://github.com/abmist/fintopicsnet/blob/master/static/images/README_screenshots/project_3_member_details.jpg)
 
