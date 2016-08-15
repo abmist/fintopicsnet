@@ -73,14 +73,14 @@ The aim was to create a **totally responsive website which keeps a minimal and f
 ## Improvements for the next stage
 
 This project is an exercise. The goal was just to put into practice some of the concepts learnt in the course. Below you can find some improvements that could be added: 
-* Message system between members.
-* Make possible to members to update their own information.
+* Message system between members
+* Make possible to members to update their own information
 * Make possible to sort/filter threads, members, etc.
-* Display user name in the navbar.
-* Improve UI/UX.
-* Pagination.  
-* Tooltips. 
-* Summary of threads, posts, articles, etc. of a member.
+* Display user name in the navbar
+* Improve UI/UX
+* Pagination
+* Tooltips
+* Summary of threads, posts, articles, etc. of a member
 
 
 ## Instructions
