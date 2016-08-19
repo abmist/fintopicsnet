@@ -162,7 +162,7 @@ Deployed thanks to Heroku.
 
 [Fintopicsnet](http://fintopicsnet.herokuapp.com/)
 
-*__Note__*: It's possible that you can't see images uploaded by users (*profile/avatar pictures* and *blog photos*). Once deployed, those images only last few hours. This happens because of Heroku's limits -it's ephemeral filesystem. All dynos are cycled every 24 hours.
+**Note**: **It's possible that you can't see images uploaded by users** (**profile/avatar pictures** and **blog photos**). Once deployed, those images only last few hours. This happens because of Heroku's limits -it's ephemeral filesystem. All dynos are cycled every 24 hours.
 
 In the event that Heroku couldn't display the website, below there are some screenshots:
 
